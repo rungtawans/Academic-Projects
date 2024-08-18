@@ -1,0 +1,63 @@
+nav#navbar {
+    margin-top: 2.4%;
+}
+.f {
+    margin-top: 7%;
+}
+.sticky {
+    position: fixed;
+    top: -4.6%;
+    width: 100%;
+}
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .f {
+    padding-top: 50px;
+}
+body {
+    color: gainsboro;
+}
+img.charpic {
+    width: 30%;
+    margin: 5% 2% 3% 10%;
+    border-top-left-radius: 20em 10em;
+    border-top-right-radius: 20em 10em;
+    box-shadow: -10px 10px white;
+}
+h3.name{
+    color: gainsboro;
+    font-family: 'Lora', serif;
+    font-weight: normal;
+    margin-bottom: 3%;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+div.content {
+    float: right;
+    width: 40%;
+    margin: 12% 10% 0 0;
+    height: 25em;
+    border-radius: 1em;
+}
+div.content span.cn {
+    font-size: 2em;
+    text-align: center;
+    font-style: italic;
+    
+}
+
+div.content p {
+    font-size: 1.5em;
+    margin-top: 2%;
+    
+}
+.solid {
+    border-top: 1px solid gainsboro;
+    margin-bottom: 8%;
+}
+span.q {
+    font-size: 1.75em;
+    color:gainsboro;
+    text-shadow: 2px 2px dimgrey;
+}

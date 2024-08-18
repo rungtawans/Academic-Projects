@@ -1,0 +1,136 @@
+.navbar,
+nav.nav-browser {
+    background-color: #8B6759;
+    font-family: 'Kanit', sans-serif;
+}
+
+.navbar-browser {
+    display: none;
+}
+
+img#logo {
+    height: 5vh;
+    float: left;
+    color: white;
+}
+
+svg.icon-profile,
+svg.icon-cart {
+    float: right;
+    width: 30px;
+    height: auto;
+    margin: 10px 10px;
+}
+
+svg.hamburger {
+    color: white;
+}
+
+button.navbar-toggler {
+    border: none;
+}
+
+.nav-browser ul li {
+    list-style: none;
+}
+
+.nav-browser ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-browser ul li a:hover {
+    text-decoration: underline;
+}
+
+/* from lab */
+.nav-browser>ul {
+    list-style: none;
+    border-radius: 1px;
+    font-size: 1.2em;
+    box-sizing: border-box;
+    margin-top: 0px;
+}
+
+.nav-browser li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.2s;
+    padding: 17px;
+    text-align: center;
+}
+
+.nav-browser ul li {
+    width: 150px;
+    display: inline-block;
+    font-size: 0.8em;
+}
+
+.item {
+    width: 150px;
+    border-radius: 1px;
+    padding-left: 0px;
+    display: inline-block;
+}
+
+.nav-browser ul li ul {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.item-list {
+    width: 150px;
+    border-radius: 1px;
+    margin-left: 100%;
+    margin-top: -52px;
+    padding-left: 0px;
+    display: inline-block;
+    font-size: 1.2em;
+
+}
+
+.nav-browser ul li:hover {
+    background-color: rgb(104, 73, 73);
+    border-radius: 1px;
+}
+
+.nav-browser ul li:hover .item {
+    display: block;
+    background-color: #e2e2e2;
+}
+.nav-browser ul li .item a, .nav-browser li .item li .item-list a{
+    color: black;
+}
+.nav-browser li .item li:hover .item-list {
+    display: block;
+    background-color: #e2e2e2;
+}
+.nav-browser li .item a:hover, .nav-browser li .item li .item-list a:hover {
+    color: white;
+}
+
+
+
+
+
+@media screen and (min-width:768px) {
+    .navbar-browser {
+        display: contents;
+    }
+
+    nav.navbar {
+        display: none;
+    }
+
+    svg.icon-profile,
+    svg.icon-cart {
+        color: white;
+    }
+
+    img#logo {
+        margin: 10px;
+    }
+
+}

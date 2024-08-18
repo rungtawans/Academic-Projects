@@ -1,0 +1,103 @@
+/* universal selector */
+* {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+}
+
+/* Container holding the image and the text */
+.container  {
+  position: relative;
+  margin: 0 10% 0 10%;
+}
+
+.bc {
+  background-color: #48404d;
+}
+
+/*combining declaration */
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.top_pic {
+  width: 15%;
+  margin: 0.7%;
+  margin-top: 25px;
+  opacity: 0.65;
+}
+
+/* use :hover pseudo-class*/
+.top_pic:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.dash {
+  border-top: 10px dashed rgb(116, 114, 114);
+  margin-top: 25px;
+  background-color: #282228bb
+}
+
+/* grouping selectors */
+h1, h3 {
+  text-transform: capitalize;
+}
+
+h1 {
+  font-variant: small-caps;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  font-size: xx-large;
+}
+
+p {
+  font-size: large;
+  font-weight: normal;
+}
+
+.indent {
+  text-indent: 2em;
+}
+
+img {
+  border-radius: 1em;
+}
+
+iframe {
+  margin: 4% 2% 0 0;
+  width: 40%;
+  height: 300px;
+  float: left;
+  clear: both;
+}
+
+.block-review {
+  width: 48%;
+  height: 285px;
+  margin: 4% 0 0 3%;
+  padding: 15px 40px 0;
+  float: left;
+  background-color: rgb(92, 92, 92, 0.5);
+  border-radius: 1em;
+}
+
+.line {
+  border-top: 2px solid white;
+  margin-right: 5%
+}
+
+.under {
+  margin-bottom: 5%;
+}
+
+footer {
+  text-align: center;
+  font-weight: none;
+  padding: 1%;
+}

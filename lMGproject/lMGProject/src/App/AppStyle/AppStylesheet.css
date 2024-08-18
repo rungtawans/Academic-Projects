@@ -1,0 +1,12 @@
+
+
+
+.btn {
+    -fx-background-color:   #302e2f;
+    -fx-background-radius: 10px;
+}
+
+.input {
+    -fx-background-radius: 10px;
+    -fx-background-color: #59575a;
+}

@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Lora', serif; */
+    /* font-family: 'Noto Serif SC', serif; */
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+#head_video {
+    width: 100%;
+    background-color: rgb(25, 25, 25);
+    color: gainsboro;
+}
+
+#head_video p {
+    font-family: 'Lora', serif;
+    text-transform: uppercase;
+    padding: 2% 0 0 2%;
+    font-size: 1.5em;
+    letter-spacing: 3px;
+    vertical-align: text-bottom;
+}
+
+#head_video img {
+    float: right;
+    padding: 1% 0 1% 0;
+    margin: 0;
+}
+
+nav#navbar {
+    width: 100%;
+    background-color: rgb(25, 25, 25, 0.8);
+    display: block;
+    padding: 1.5%;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    position: fixed;
+}
+
+nav a {
+    color: gainsboro;
+    padding: 1.5% 3%;
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+
+nav a:hover {
+    color: black;
+    background-color: white;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+}
+
+.a-drop {
+    color: gainsboro;
+    /* padding: 1.5% 3%; */
+    font-size: 1.3em;
+    text-decoration: none;
+    text-align: center;
+    margin: 0;
+
+}
+
+.dropdown {
+    padding: 0 3%;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(40, 40, 40);
+    min-width: 160px;
+}
+
+.dropdown-content a {
+    color: gainsboro;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.f {
+    margin-top: 5%;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky+.f {
+    padding-top: 50px;
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3.25em;
+    text-align: center;
+    padding: 5% 0 1%;
+    color: gainsboro;
+    font-weight: 350;
+    text-transform: uppercase;
+    background-color: rgb(25, 25, 25);
+    
+}
+
+p.describe {
+    color: gainsboro;
+    font-size: 1.5em;
+    margin: 2% 10% 5% 10%;
+    text-indent: 4em;
+    letter-spacing: 1.5px;
+    line-height: 1.5em;
+}
+
+span.cn {
+    font-family: 'Noto Serif SC', serif;
+}
+
+@-moz-document url-prefix() {
+    nav#navbar {
+        margin-top: 2.3%;
+    }
+
+    .sticky {
+        top: -4.6%;
+    }
+}

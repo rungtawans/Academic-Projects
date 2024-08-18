@@ -1,0 +1,22 @@
+.active-page {
+    background-color: rgba(200, 231, 240, 0.5);
+}
+.active-page:hover {
+    background-color: rgb(206, 226, 226);
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin: 3% 5%;
+    flex-wrap: wrap;
+}
+img {
+    width: 100%;
+}
+section {
+    background-color: rgb(255, 255, 255);
+    width: 20%;
+    padding: 1%;  
+    border-radius: 1em;  
+    margin: 1%;
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.main">
+    <children>
+        <AnchorPane prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #1c1a1f;">
+            <children>
+                <Text fill="WHITE" layoutX="26.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMG" wrappingWidth="129.983642578125">
+                    <font>
+                        <Font name="JasmineUPC" size="51.0" />
+                    </font>
+                </Text>
+                <Button fx:id="buttonMain" layoutX="432.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToMain" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="HOME" textFill="WHITE" />
+                <Button layoutX="530.0" layoutY="6.0" mnemonicParsing="false" onAction="#SWtoLogin" prefHeight="48.0" prefWidth="106.0" style="-fx-background-color: #1c1a1f;" text="LOGIN" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="518.0" prefWidth="600.0" style="-fx-background-color: #484848;">
+            <children>
+                <Line endX="335.39996337890625" endY="0.9999939203262329" layoutX="303.0" layoutY="-1.0" startX="-303.0" startY="0.9999939203262329" stroke="WHITE" />
+                <Text fill="WHITE" layoutX="273.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMG" textAlignment="CENTER" wrappingWidth="91.58367919921875">
+                    <font>
+                        <Font name="JasmineUPC" size="76.0" />
+                    </font>
+                </Text>
+                <Text fill="WHITE" layoutX="176.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If you looking for inspiration you can find here in lMG art &amp; design" textAlignment="CENTER" wrappingWidth="286.78369140625">
+                    <font>
+                        <Font name="Calisto MT" size="17.0" />
+                    </font>
+                </Text>
+                <Button fx:id="buttonMain1" layoutX="176.0" layoutY="234.0" mnemonicParsing="false" onAction="#SWtoLogin" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #1c1a1f;" text="Login" textFill="WHITE" />
+                <Button fx:id="buttonPage1" layoutX="356.0" layoutY="234.0" mnemonicParsing="false" onAction="#GoToPage1" prefHeight="31.0" prefWidth="106.0" style="-fx-background-color: #1c1a1f;" text="Guest" textFill="WHITE" />
+                <Line endX="-51.89996337890625" endY="1.0" layoutX="496.0" layoutY="151.0" startX="-303.0" startY="0.9999939203262329" stroke="WHITE" />
+            </children></AnchorPane>
+    </children>
+</VBox>

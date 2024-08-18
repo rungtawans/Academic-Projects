@@ -1,0 +1,93 @@
+div.pic-section {
+    /* width: 90%; */
+    margin: 5% 5% 5%;
+    border-radius: 1em;
+    /* display: flex; */
+    background-color: rgba(255, 255, 255, 0.9);
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+img {
+    width: 100%;
+    border-radius: 1em;
+}
+
+section {
+    /* width: 30%; */
+    margin: 0 2%;
+    padding: 2% 3%;
+    border-radius: 1em;
+    /* text-align: ; */
+    /* float: left; */
+}
+
+.pic-section p {
+    font-size: 1.2em;
+    font-family: 'Noto Sans Thai', sans-serif;
+
+}
+
+.grid-pic {
+    margin: 0 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2em;
+    column-gap: 2em;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 0 0 1em 1em;
+
+    padding: 5%;
+}
+
+h2 {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1em 1em 0 0;
+
+    margin: 0 5%;
+    padding: 5% 0 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.btn-ntx,
+.btn-bc {
+    font-size: 1em;
+    padding: .5em 1em;
+    border-radius: .5em;
+    text-decoration: none;
+    color: black;
+    margin: 0 .5em;
+}
+.btn-bc {
+    background-color: rgb(177, 188, 192);
+    
+}
+.btn-ntx {
+    background-color: rgb(97, 177, 202);
+
+}
+.btn-ntx:hover, .btn-bc:hover {
+    background-color:#85a5c0;
+    transition: .5s;
+}
+.btn-ntx:active, .btn-bc:active {
+    background-color:#fff;
+}
+
+@media screen and (max-width:576px) {
+    .pic-section p {
+        font-size: 1em;
+    }
+
+    div.pic-section,
+    .grid-pic {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

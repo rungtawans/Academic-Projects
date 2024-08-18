@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <link rel="stylesheet" href="./navbar.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="active-page"><a href="#">Home</a></li>
+            <li><a href="#">Article</a>
+                <ul class="navlist">
+                    <li><a href="#">list1</a></li>
+                    <li><a href="#">list2</a>
+                        <ul class="item-list">
+                            <li><a href="#">list1</a></li>
+                            <li><a href="#">list1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="box box1">
+        <form action="#" method="post">
+            <fieldset>
+                <legend><h1>Get Information</h1></legend>
+                <label for="fname">FirstName : </label>
+                <input type="text" name="fname" id="fname"><br>
+                <label for="lname">Lastname : </label>
+                <input type="text" name="lname" id="lname"><br>
+                <label for="email">Email : </label>
+                <input type="email" name="email" id="email"><br>
+                <label for="tel">Tel : </label>
+                <input type="tel" name="tel" id="tel"><br><br>
+
+                <input class="btn" type="submit" value="submit">
+            </fieldset>
+        </form>
+    </div>
+    <div class="box box2">
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mint</td>
+                    <td>mint.suttho@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>mint</td>
+                    <td>mint.suttho@gmail.com</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">End</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 75%;
+    height: 65vh;
+    margin: 4% auto 0;
+    padding: 3% 5%;
+    border-radius: 2em; 
+}
+img {
+    width: 75%;
+    margin: 10% 0 0 5%;
+    border-radius: 50% 50% 0 0;
+}
+img:hover {
+    animation: shake 0.5s;
+}
+h1 {
+    font-family: 'Rampart One', cursive;
+    font-size: xx-large;
+}
+p {
+    font-size: 1.2em;
+}
+section.s1 {
+    width: 40%;
+    float: left;
+}
+section.s2 {
+    width: 60%;
+    float: left;
+}
+span.bold {
+    font-weight: bold;
+}
+
+@keyframes shake {
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    20% { transform: translate(-1px, 2px) rotate(1deg); }
+}

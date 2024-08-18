@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td {
+            border: 1px solid;
+        }
+        table {
+            border-collapse: collapse;
+        }
+        tr.odd {
+            background-color: lightblue;
+        }
+        th,td {
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Empl0yee Table</caption>
+        <colgroup>
+            <col style="background-color: lightblue;">
+            <col span="2" style="background-color: pink; "/>
+
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Employee-id</th>
+                <th>Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>001</td>
+                <td>Gary</td>
+                <td>12000</td>
+            </tr>
+            <tr>
+                <td>002</td>
+                <td>Porter</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>003</td>
+                <td>Ashley</td>
+                <td>20000</td>
+            </tr>
+            <tr>
+                <td>004</td>
+                <td colspan="2">Mint,15000</td>
+            </tr>
+            <tr>
+                <td rowspan="2">005</td>
+                <td>Wick</td>
+                <td>10000</td>
+            </tr>
+            <tr>
+                <td>Andre</td>
+                <td>20000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">foot</td>
+            </tr>
+        </tfoot>
+        
+    </table>
+    
+</body>
+</html>

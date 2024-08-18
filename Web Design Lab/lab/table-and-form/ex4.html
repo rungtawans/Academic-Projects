@@ -1,0 +1,66 @@
+Fema<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input[type="text"] {
+            border: 2px solid orange;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<!--  get method see data on url -->
+<!--  post method dont see-->
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Information</legend>
+            Student id : <input type="text"
+            pattern="[6][0-9]{8}-[0-9]" name="id" required><br>
+            Fullname : <input name="name" type="text" size="20" minlength="1" required><br>
+        </fieldset>
+        <fieldset>
+            <legend>Password</legend>
+            Password : <input name="password" type="password" >
+        </fieldset>
+        <fieldset>
+            <legend>Radio</legend>
+            <input type="radio" name="gender" value="male"> Male <br>
+            <input type="radio" name="gender" value="female"> Famale <br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Checkbox</legend>
+            <input type="checkbox" name="sport" value="f"> Football <br>
+            <input type="checkbox" name="sport" value="b"> Basketball <br>
+            <input type="checkbox" name="sport" value="v"> Valleyball <br>
+
+
+        </fieldset>
+        <fieldset>
+            <legend>Select</legend>
+            <select name="major" id="">
+                <option value="" hidden>Select Major</option>
+                <option value="cs">CS</option>
+                <option value="it">IT</option>
+                <option value="gis">GIS</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Textarea</legend>
+            <textarea name="detail" cols="30" rows="10"></textarea>
+        </fieldset>
+
+        <!-- <input type="submit" value="send"> -->
+        <button type="submit">ส่งข้อมูล</button>
+    </form>
+
+
+
+</body>
+
+</html>

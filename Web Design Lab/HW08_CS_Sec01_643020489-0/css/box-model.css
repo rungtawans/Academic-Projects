@@ -1,0 +1,31 @@
+h1 {
+    margin-bottom: 5%;
+}
+
+.margin {
+    margin: 0 auto;
+    width: 70%;
+    font-size: 22px;
+    padding: 3%; 
+    background-color:lightblue;
+}
+.border, .padding, .content2 {
+    padding: 3%;
+    margin: 3%;   
+}
+.content2 {
+    text-align: center;
+    padding: 10%;
+    background-color: lightgray;
+}
+.padding {
+    background-color:lightgoldenrodyellow;
+}
+.border {
+    background-color:lightgray;
+}
+
+span.bold {
+    font-weight: bold;
+    text-decoration: underline;
+}

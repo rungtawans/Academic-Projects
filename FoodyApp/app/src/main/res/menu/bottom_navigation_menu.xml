@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/homePage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_food_home_24"
+        android:title="Home"
+        app:cnb_iconColor="#484362"
+        app:cnb_textColor="#09051C"/>
+    <item
+        android:id="@+id/mapPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_map_24"
+        android:title="Map"
+        app:cnb_iconColor="#484362"
+        app:cnb_textColor="#09051C"/>
+    <item
+        android:id="@+id/cartPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_shopping_cart_24"
+        android:title="Cart"
+        app:cnb_iconColor="#484362"
+        app:cnb_textColor="#09051C"/>
+    <item
+        android:id="@+id/settingPage"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Setting"
+        app:cnb_iconColor="#484362"
+        app:cnb_textColor="#09051C"/>
+</menu>

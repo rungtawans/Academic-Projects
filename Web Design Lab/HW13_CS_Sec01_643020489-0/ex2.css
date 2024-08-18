@@ -1,0 +1,72 @@
+* {
+    font-family: sans-serif;
+}
+
+.box {
+    display: flex;
+}
+
+.box-1 {
+    flex: 1;
+}
+
+.box-2 {
+    flex: 1;
+}
+
+label.req::after {
+    content: "*";
+    color: red;
+}
+
+.box {
+    padding: 1%;
+}
+
+.box-2 div {
+    padding: 1% 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h3 {
+    font-weight: normal;
+    margin-bottom: 2%;
+    margin-top: 0;
+}
+
+input,
+select {
+    margin-top: 1%;
+}
+
+.align-bottom {
+    display: inline-block;
+}
+
+.align-bottom p {
+    margin-top: 10px;
+}
+
+.box-1 div:first-child {
+    background-color: rgb(250, 250, 179);
+}
+
+.box-1 div {
+    padding: 1rem 5rem 1rem 0;
+    margin-right: 15rem;
+}
+
+.box-2 div {
+    margin-right: 0;
+}
+
+#position {
+    width: 150px;
+}

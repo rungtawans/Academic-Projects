@@ -1,0 +1,31 @@
+h2 {
+    margin-bottom: 4%;
+}
+.content {
+    display: block;
+}
+
+
+.col {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.content .col {
+    width: 50%;
+    float: left;
+}
+
+input , select{
+    margin-bottom: 1em;
+    padding: 0.4em;
+    border-radius: 5px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 1px grey;
+    
+
+}
+

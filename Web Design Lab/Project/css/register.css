@@ -1,0 +1,65 @@
+body{
+    background-image: url("./img/coffee-and-tea-index.png");
+}
+fieldset {
+    margin: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    width: max-content;
+    padding: 20px;
+    background-color: #f9c6b3;
+    border-radius: 5px;
+}
+
+.register {
+    text-align: right;
+}
+
+input[type="text"] {
+    border: 2px solid #8b6759;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+input[type="password"] {
+    border: 2px solid #8b6759;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+input[type="e-mail"] {
+    border: 2px solid #8b6759;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    text-align: center;
+    padding: 0 5px;
+    margin: 0 auto;
+    background-color: #5d7b45;
+    color: white;
+    padding: 0 15px;
+    border-radius: 5px;
+}
+
+input[type="tel"] {
+    border: 2px solid #8b6759;
+    border-radius: 5px;
+}
+
+textarea {
+    border: 2px solid #8b6759;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.box-2 {
+    text-align: center;
+}
+
+.label {
+    float: left;
+    text-align: right;
+    margin-left: auto;
+}

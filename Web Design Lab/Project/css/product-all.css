@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav ol li a {
+    color: white;
+}
+
+nav ol li a:hover {
+    color: #e1e1e1;
+}
+
+li.breadcrumb-item.active::before,
+li.breadcrumb-item.active {
+    color: #e1e1e1;
+}
+.img-head {
+    margin-top: 14rem;
+    background-image: url(../img/top-view-tasty-coffee-with-coffee-beans.jpg);
+    width: 100%;
+    height: 20vh;
+    background-size:cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+}
+.img-head h1 {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black ;
+}
+
+.wrapper {
+    padding: 10rem 5% 0 5%;
+    /* padding-top: 15rem; */
+}
+
+fieldset {
+    border: 1px solid #d1d1d1;
+    padding: 2rem;
+}
+
+div.move-right {
+    color: white;
+}
+
+button i.ion-android-search {
+    padding: 1rem;
+}
+
+button.search-btn {
+    border-style: solid;
+    border-color: #e3e3e3;
+}
+
+button.search-btn:active {
+    background-color: #5b423a;
+    border-color: #5b423a;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 4rem 0;
+}
+h2 {
+    padding: 1rem;
+    border-bottom: 2px solid #878787;
+    margin-bottom: 5rem;
+}
+/* box product */
+.product {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    justify-content:space-around;
+    align-items: center;         
+
+}
+
+.box {
+    width: 18rem;
+    height: auto;
+    /* box-shadow: 2px 2px 30px rgb(0, 0, 0, 0.2); */
+    /* background-color: #f0f0f0; */
+    /* border: 1px solid #e3e3e3; */
+    border-radius: 10px;
+    /* overflow: hidden; */
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 0; */
+    /* transform: translate(-50%, -50%); */
+    margin-bottom: 5rem;
+}
+
+.slide-img {
+
+    height: 100%;
+    position: relative;
+
+}
+
+.slide-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    background-color:#eadab9;
+    border-radius: 10px;
+
+
+}
+
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+
+
+}
+
+.type {
+    display: flex;
+    flex-direction: column;
+}
+
+.type a {
+    /* margin: 5px 0px; */
+    font-weight: bold;
+    /* padding-right: 8px; */
+    color: #5b423a;
+
+}
+
+.type span {
+    color: grey;
+}
+
+.price {
+    font-weight: 600;
+    color: #5b423a;
+
+}
+
+.slide-img .overlay {
+    width: 100.5%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    /* background-image: url(../img/Product/drink-me-coffee2.png);
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.slide-img .overlay {
+    visibility: hidden;
+}
+
+.slide-img:hover .overlay {
+    visibility: visible;
+    animation: fade 0.2s;
+}
+
+.buy-btn {
+    width: 100%;
+    /* height: 40px; */
+    text-align: center;
+    padding: 1rem;
+    background-color: #81716c;
+    color: white;
+}
+
+.buy-btn:hover {
+    color: white;
+}
+
+.buy-btn:active {
+    background-color: #ffffff;
+    color: #81716c;
+    /* transition: all ease 650ms; */
+
+}
+/* page nav */
+nav.page-nav {
+    background-color: #fff;
+}
+nav.page-nav ul li{
+    display:block;
+}
+nav.page-nav ul {
+    margin: 0 auto;
+}
+.active > .page-link {
+    background-color: #8b6759;
+    border-color: #8b6759;
+}
+a.page-link {
+    color: #8b6759;
+}
+.page-link {
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+
+/* overlay */
+.item1:hover .slide-img{
+    background-image: url(../img/Product/drink-me-coffee2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item2:hover .slide-img{
+    background-image: url(../img/Product/drink-me-tea2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item3:hover .slide-img{
+    background-image: url(../img/Product/nes-espresso-r2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item4:hover .slide-img{
+    background-image: url(../img/Product/nes-low-cal2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item18:hover .slide-img{
+    background-image: url(../img/Product/maxim1-2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item19:hover .slide-img{
+    background-image: url(../img/Product/maxim2-2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item20:hover .slide-img{
+    background-image: url(../img/Product/maxim3-2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item21:hover .slide-img{
+    background-image: url(../img/Product/twining-ceylon2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item23:hover .slide-img{
+    background-image: url(../img/Product/twining-english-bf2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item25:hover .slide-img{
+    background-image: url(../img/Product/twining-greentea2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item31:hover .slide-img{
+    background-image: url(../img/Product/moc-cappu2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item32:hover .slide-img{
+    background-image: url(../img/Product/moc-caramel-mocha2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+.item36:hover .slide-img{
+    background-image: url(../img/Product/moc-soy-vanila2.png);
+    background-size: cover;
+    border-radius: 1rem 1rem 0 0;
+    animation: fade 560ms;
+}
+
+
+
+.item1:hover img, 
+.item2:hover img,
+.item3:hover img,
+.item4:hover img,
+.item18:hover img,
+.item19:hover img,
+.item20:hover img,
+.item21:hover img
+,.item23:hover img
+,.item25:hover img
+,.item31:hover img
+,.item32:hover img
+,.item36:hover img{
+    visibility: hidden;
+}
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .box {
+        width: 15rem;
+    }
+
+    .product {
+        grid-template-columns: auto auto auto auto auto auto;
+
+    }
+    .box {
+        width: 14rem;
+    }
+}
+
+@media screen and (max-width:768px) {
+    /* .box {
+        width: 10rem;
+    } */
+
+    .product {
+        grid-template-columns: auto auto auto auto;
+
+    }
+
+    div.move-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .box {
+        width: 13rem;
+    }
+
+    .product {
+        grid-template-columns: auto auto;
+        justify-content: space-around;
+
+    }
+
+    div.move-right {
+        display: none;
+    }
+}

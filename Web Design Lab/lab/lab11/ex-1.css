@@ -1,0 +1,25 @@
+h1 {
+    background-color: red;
+}
+
+
+/* screen <= 1023px */
+@media screen and (max-width:1023px) {
+    h1 {
+        background-color: green;
+    }
+    
+}
+@media screen and (max-width:576px) {
+    h1 {
+        background-color: blue;
+    }
+}
+@media screen and (min-width:700px) and (max-width:800px) {
+    h1 {
+        background-color: pink;
+    }
+    body {
+        background-color: hotpink;
+    }
+}

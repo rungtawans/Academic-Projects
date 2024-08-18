@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.goToPage">
+    <children>
+        <AnchorPane prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #1c1a1f;">
+            <children>
+                <Text fill="WHITE" layoutX="26.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMG" wrappingWidth="129.983642578125">
+                    <font>
+                        <Font name="JasmineUPC" size="51.0" />
+                    </font>
+                </Text>
+                <Button fx:id="buttonMain" layoutX="138.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToMain" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="HOME" textFill="WHITE" />
+                <Button fx:id="buttonPage1" layoutX="236.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage1" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="ART" textFill="WHITE" />
+                <Button fx:id="buttonPage2" layoutX="334.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage2" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="UX/UI" textFill="WHITE" />
+                <Button fx:id="buttonPage3" layoutX="432.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage3" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="GRAPHIC" textFill="WHITE" />
+                <Button fx:id="buttonPage4" layoutX="530.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage4" prefHeight="48.0" prefWidth="106.0" style="-fx-background-color: #1c1a1f;" text="COLORS" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="518.0" prefWidth="600.0" style="-fx-background-color: #484848;">
+            <children>
+                <Line endX="335.39996337890625" endY="0.9999939203262329" layoutX="303.0" layoutY="-1.0" startX="-303.0" startY="0.9999939203262329" stroke="WHITE" />
+                <ImageView fitHeight="150.0" fitWidth="188.0" layoutX="30.0" layoutY="182.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@img/szabo-viktor-qmvl6m4Tots-unsplash.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="188.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@img/emily-bernal-v9vII5gV8Lw-unsplash.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="188.0" layoutX="233.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@img/faizur-rehman-pHPzdEHN6Os-unsplash.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="188.0" layoutX="438.0" layoutY="14.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@img/theme-photos-CGpifH3FjOA-unsplash.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="188.0" layoutX="233.0" layoutY="182.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@img/milad-fakurian-jBif-dovsTQ-unsplash.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="188.0" layoutX="438.0" layoutY="182.0" pickOnBounds="true" smooth="false">
+                    <image>
+                        <Image url="@img/xps-dpbXgTh0Lac-unsplash.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
+

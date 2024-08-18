@@ -1,0 +1,278 @@
+body, html {
+  height: 100%;
+  margin: 0 0 0 0;
+}
+
+/* The hero image */
+.hero-image {
+/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("comsci2.jpg");
+
+/* Set a specific height */
+/* height: 100%; */
+
+/* Position and center the image to scale nicely on all screens */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+text-align: center;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+color: white;
+}
+
+/* Navbar container */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+    /* background-color: whitesmoke;  */
+    /* font-family: Arial; */
+    font-family: "monaco", monospace;
+    
+  }
+
+  /* Sticky nav ber */
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
+  
+  /* Links inside the navbar */
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #fc9483;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* Container holding the image and the text*/
+.container {
+    position: relative;
+  }
+
+  /* img text block */
+  /* Bottom right text */
+  .text-block-head {
+    position: absolute;
+    /* position:fixed; */
+    bottom: 45%;
+    right: 35%;
+    background-color: rgb(31, 27, 27,0.8);
+    /* background-color: rgb(252, 148, 131, 0.8); */
+    /* opacity */
+    /* opacity: 0.2; */
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .text-block {
+      /* position: absolute; */
+      /* width: 80%;
+      height: auto; */
+      position: relative;
+      color: #252222;
+      padding-left: 15%;
+      padding-right: 15%;
+      /* background-color:#f9f9f9; */
+  }
+ 
+
+  /* .text-block-center {
+    position: center;
+    color: #252222;
+    padding-left: 5%;
+    padding-right: 30%; 
+  } */
+
+  .fontHead1 {
+      font-family: "monaco", monospace;
+      font-size: 28pt;
+      color: white;
+  }
+
+  .fontHead2 {
+    font-family: "monaco", monospace;
+    font-size: 20pt;
+    color: #fe7d6a;
+  }
+
+/* font thai css rules specific family */
+  /* font-family: 'Pridi', serif; */
+  .fontHeadTh {
+    font-family: 'Pridi', serif;
+    font-size: 20pt;
+    color: #fe7d6a;
+    /* color: #252222; */
+  }
+  .fontTh {
+    font-family: 'Pridi', serif;
+    font-size: 14pt;
+    /* color: #252222; */
+  }
+
+  .fontRv {
+    font-family: 'Pridi', serif;
+    font-size: 12pt;
+  }
+
+  
+  .buttonSeeMore {
+    font-family: "monaco", monospace;
+    color: #fff;
+    display: block;
+    width: 10%;
+    border: none;
+    background-color:  #252222;
+    padding: 14px 28px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    float:right;
+    margin-right: 20%;
+    /* margin-bottom: 0%; */
+  }
+
+  .buttonSeeMore:hover {
+
+    color: #fff !important ;
+    background-color: #fc9483 !important;
+    
+  }
+
+  img {
+    width: 60%;
+    height: auto;
+    display: block;   
+    margin-right: auto; 
+    margin-left: auto; 
+  }
+
+  .box {
+    border-radius: 15px 15px 15px;
+    background-color: #f6f3ef;
+    width: 40%;
+    height: 60%; 
+    margin: auto;
+    margin-top: 5%;
+    /* margin-bottom: 5%; */
+}
+
+.container2 {
+  /* padding: 15px 30px; */
+  /* padding:  10px 30px 20px; */
+  padding: 5% 10% 5% 10%;
+}
+
+
+.form-submit-button {
+  background: #fc9483;
+  color: white;
+  border: 5px solid #f6f3ef;
+  width: 20%;
+  height: 20%;
+  font-size: medium;
+  font-family: 'Pridi', serif;
+  margin: 5% 10% 0 75%;
+  /* border-radius: 20px; */
+  /* box-shadow: 5px 5px 5px #eee; */
+  /* text-shadow: none; */
+  }
+.form-submit-button:hover {
+  background: #fff;
+  color: #252222;
+  /* border: 5px solid #f6f3ef;
+  width: 20%;
+  height: 20%;
+  font-size: medium;
+  font-family: 'Pridi', serif; */
+  /* margin: auto; */
+  /* border-radius: 20px; */
+  /* box-shadow: 5px 5px 5px #eee; */
+  /* text-shadow: none; */
+  }
+
+  footer .font {
+    font-family: "monaco", monospace;
+    color: #252222;
+    font-size: 8pt;
+  }
+
+  footer {
+
+    /* background-color:#b4b4b4; */
+    height: fit-content;
+    margin-top: 10%;
+    padding: 2% 5% 2% 10%;
+  }

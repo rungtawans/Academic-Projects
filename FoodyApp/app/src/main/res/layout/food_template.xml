@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:contentPadding="0dp"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/ivHouse"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/sample_house"
+                android:scaleType="fitXY"
+                android:alpha="1"
+                android:layout_gravity="center_vertical"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <TextView
+                        android:id="@+id/tvPriceTag"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:maxLines="1"
+                        android:textColor="#FFBD34"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="$19"/>
+                    <TextView
+                        android:id="@+id/tvFoodType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textColor="#F2533F"
+                        android:textStyle="bold"
+                        android:textSize="18sp"
+                        android:text="Sushi"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvHouseDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="20dp"
+                    android:maxLines="1"
+                    android:textColor="#423E5B"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="3130 Range Rd, Horon MI 1334"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/circle_red"/>
+                    <TextView
+                        android:id="@+id/tvDistance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="10dp"
+                        android:maxLines="1"
+                        android:textColor="#8E8B9D"
+                        android:textSize="15sp"
+                        android:text="19 km."/>
+                    <ImageView
+                        android:id="@+id/ivActionBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/action_btn"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

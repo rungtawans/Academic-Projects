@@ -1,0 +1,93 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0; 
+}
+body {
+    background-image: url("img/pexels-vojtech-okenka-392018.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/* font family - cascading rule - ordering */
+#contain_nav a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 8%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#contain_nav a:hover {
+    background-color: white;
+    color: black;
+}
+#contain_nav {
+    background-color: rgb(90, 90, 90);
+    width: 15%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    clear:  both;
+}
+#home_nav {
+    background-color: rgb(52, 52, 52);
+}
+/* font family - cascading rule - ordering */
+h1, h3 {
+    font-family: 'Libre Baskerville', serif;
+}
+.link {
+    color: brown;
+}
+span {
+    background-color: rgb(246, 190, 123, 0.5);
+}
+/* psedo-selectors*/
+span:hover {
+    background-color: rgb(246, 190, 123);
+    transition: 0.5s
+}
+table, tr, td {
+    border-collapse: collapse;
+    padding: 6% 3%;
+    text-align: center;
+    border: 5px solid white;
+}
+table tr td {
+    background-color: #e1dbce;
+}
+/* font family - cascading rule - ordering */
+table {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+td a {
+    font-family: 'Libre Baskerville', serif;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1.5em;
+}
+/* psedo-selectors*/
+td a:hover {
+    color: rgb(0, 0, 0);
+    text-decoration: underline solid 2px;
+    transition: 0.3s;
+}
+td p {
+    margin-top: 15px;
+    font-size: 1.25em;
+    text-align: left;
+    text-indent: 2em;
+}
+img:hover {
+    cursor: pointer;
+}
+footer {
+    padding: 2%;
+    background-color: rgb(52, 52, 52);
+    text-align: center;
+}
+footer a {
+    color: white;
+    text-align: center;
+}

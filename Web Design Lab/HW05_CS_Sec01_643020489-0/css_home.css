@@ -1,0 +1,28 @@
+#topic_box {
+    width: 60%;
+    color: whitesmoke;
+    float: right;
+    margin: 15% 5% 20%;
+    padding: 4%;
+    text-align: right;
+    padding-right: 3%;
+    border: solid 1px whitesmoke;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* text shadow */
+    text-shadow: 5px 3px 3px black;
+}
+h1 {
+    font-size: 4em;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+h3 {
+    font-size: 1.3em;
+}
+.content_box {
+    clear: both;
+    width: 74.5%;
+    margin: 4% 10% 4% 20%;
+}
+
+

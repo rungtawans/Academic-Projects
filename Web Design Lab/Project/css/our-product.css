@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    /* margin: 10rem 0;  */
+    padding: 5rem 10%;
+    display: grid;
+    background-color: white;
+}
+
+.img-head {
+    margin-top: 14rem;
+    background-image: url(../img/pexels-irina-iriser-1379636.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size:cover;
+    background-position: left;
+    display: flex;
+    justify-content: center;
+}
+.full {
+    background-image: url(../img/pexels-quang-nguyen-vinh-2582652.jpg);
+    width: 100%;
+    height: 30vh;
+    background-size:cover;
+    background-position: center;
+   
+}
+.img-head h1 {
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black ;
+}
+.section {
+    display: flex;
+}
+.reverse{
+    flex-direction: row-reverse;
+}
+.section div.img {
+    width: 40%;
+    
+}
+.section div {
+    width: 60%;
+}
+.img img, .img-reverse img {
+    width: 100%;
+}
+.img {
+    margin-right: 5%;
+}
+.img-reverse {
+    margin-left: 5%;
+}
+
+
+.content h1 {
+    text-align: center;
+    border-bottom: 2px solid lightgrey;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.content ol li{
+    list-style: disc;
+    color: #5b423a;
+}
+.content .head-ol {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:768px) {
+    .img-head , .full{
+        height: 20vh;
+    }
+    .section {
+        flex-direction: column;
+    }
+    .section div.img , div.content, div.img-reverse{
+        width: 100%;
+    }
+    .img, .img-reverse {
+        margin: 0;
+    }
+    
+}
+
+

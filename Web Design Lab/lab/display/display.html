@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span.a {
+            /*ขนาดไม่มีผล*/
+            display: inline;
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            border: 2px solid;
+            padding: 10px;
+        }
+        span.b {
+            display: block;
+            /*กำหนดขนาดได้*/
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            border: 2px solid;
+            padding: 10px;
+        }
+        span.c {
+            display: inline-block;
+            /*กำหนดขนาดได้*/
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            border: 2px solid;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div><span class="a">a inline</span><span class="a">a inline</span></div>
+    <br>
+    <div><span class="b">block</span><span class="b">block</span></div><br>
+    <div><span class="c">inline-block</span><span class="c">inline-block</span></div><br>
+    <div><span class="a">a inline</span><span class="b">block</span></div> 
+    <br>
+    <div><span class="a">a inline</span><span class="c">inline-block</span></div>  
+    <br>
+    <div><span class="b">block</span><span class="c">inline-block</span></div> 
+    
+</body>
+</html>

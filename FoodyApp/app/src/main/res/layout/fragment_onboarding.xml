@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnboardingFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Skip"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#262222"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="24dp"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/ivImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/onboarding1"
+        android:scaleType="fitXY"
+        android:layout_below="@id/tvSkip"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yummy and fresh food"
+        android:textColor="#181818"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/ivImage"
+        android:layout_centerHorizontal="true"/>
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_pizza"
+        android:scaleType="fitXY"
+        android:layout_centerHorizontal="true"
+        android:layout_toEndOf="@id/tvTitle"
+        android:layout_below="@id/ivImage"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="#919193"
+        android:text="Your order has been placed! You will \nrecieve an email receipt shortly"
+        android:layout_below="@id/tvTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/ivIndicator1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/indicator_activate"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/ivIndicator2"
+        android:layout_marginBottom="90dp"/>
+    <ImageView
+        android:id="@+id/ivIndicator2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/indicator_inactivate"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"/>
+    <ImageView
+        android:id="@+id/ivIndicator3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/indicator_inactivate"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/ivIndicator2"
+        android:layout_marginBottom="90dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(59, 47, 47);
+}
+* {
+    margin: 0;
+}
+nav {
+    padding: 10px 20px;
+    background-color: rgb(52, 86, 117);
+}
+nav ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 1.5rem;
+}
+.menu a:hover {
+    background-color: rgb(41, 71, 98);
+}
+.menu li {
+    position: relative;
+}
+.submenu-1 {
+    position: absolute;
+    background-color: #e6e6e6;
+    width: max-content;
+    left: 50%;
+    display: none;
+}
+.submenu-2 {
+    position: absolute;
+    background-color: #e6e6e6;
+    width: max-content;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+.menu li:hover > .submenu-1 {
+    display: block;
+}
+.menu li:hover > .submenu-2 {
+    display: block;
+}
+.lv-1::after {
+    position: relative;
+    left: 20%;
+    content: "\25be";
+}
+.lv-2::after {
+    position: relative;
+    left: 20%;
+    content: "\25b8";
+}
+.submenu-1 a, .submenu-2 a {
+    color: black;
+}
+.submenu-1 a:hover, .submenu-2 a:hover {
+    color: white;
+}

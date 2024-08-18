@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+nav {
+    background-color: #423f3b;
+    margin-bottom: 0;
+}
+nav ul {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0;
+}
+nav ul li {
+    list-style: none;
+    padding: 1% 2%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1em;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #fff;
+}
+header {
+    background-color: #fff;
+    text-align: center;
+    padding: 1% 1% 0 0;
+}
+.carousel-inner .carousel-item img {
+    height: 40vh;
+}
+.wrapper {
+    padding: 5% 4%;
+}
+p {
+    text-indent: 3em;
+    font-size: 1em;
+}
+.ads h5 {
+    text-align: center;
+}
+.ads img {
+    float: right;
+    margin-right: 5%;
+    width: 90%;
+}
+footer {
+    background-color: #423f3b;
+    color: #fff;
+    text-align: center;
+    padding: 2%;
+}
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.row{
+    margin: 2% 0 5%;
+}
+div.card {
+    margin: 5% 3%;
+    height: 33em;
+    border: none;
+}
+.card-img-top {
+    height: 300px;
+}
+.card-body a {
+    color:#423f3b;
+}
+.card p {
+    text-indent: 2em;
+}
+.card-body {
+    padding: 5% 0 0;
+}
+
+@media (min-width:768px) {
+    p {
+        font-size: 1.1em;
+    }
+    .carousel-inner .carousel-item img {
+        height: 95vh;
+    }
+    .carousel-caption {
+        bottom: 40vh;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 4% 0;
+        border-radius: 1em;
+    }
+    .carousel-caption h5 {
+        font-size: 1.5em;
+    }
+    div.card {
+        height: 35em;
+    }
+}
+

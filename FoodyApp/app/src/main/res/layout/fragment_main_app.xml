@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9F9FE"
+    tools:context=".MainAppFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_wrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/cardChipNavigator"/>
+
+    <FrameLayout
+        android:id="@+id/cardChipNavigator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dp">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:cardElevation="5dp"
+            android:background="@color/black"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+                <com.ismaeldivita.chipnavigation.ChipNavigationBar
+                    android:id="@+id/bottom_navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cnb_menuResource="@menu/bottom_navigation_menu"
+                    app:labelVisibilityMode="selected"
+                    app:cnb_backgroundColor="#E9FAF2"
+                    app:cnb_unselectedColor="#484362"
+                    app:cnb_radius="12dp"/>
+            </FrameLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+    </FrameLayout>
+
+
+</RelativeLayout>

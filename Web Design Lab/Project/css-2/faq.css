@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+
+}h1{
+    font-size: 1.5rem;
+}.content{
+    text-align: center;
+    vertical-align: middle;
+}

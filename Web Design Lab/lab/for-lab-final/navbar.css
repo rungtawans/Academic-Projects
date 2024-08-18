@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+body {
+    background-image: url("./396-3969602_free-download-melody-sanrio-png-clipart-my-melody.webp");
+    background-repeat: repeat;
+    background-position: center;
+}
+li.active-page a {
+    background-color: rgb(117, 151, 163);
+    color: aliceblue;
+}
+li {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    background-color: lightblue;
+    display: block;
+    float: left;
+    padding: .5rem 3rem;    
+    text-align: center;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+.navbar {
+    box-shadow: 0 5px 5px rgb(172, 172, 172);
+}
+.navlist {
+    display: inline-block;
+    box-shadow: 0 5px 5px rgb(172, 172, 172);
+    top: 2.1rem;
+}
+.item-list {
+    display: inline-block;
+    box-shadow: 0 5px 5px rgb(172, 172, 172);
+
+
+}
+.navlist li a{
+    background-color: rgb(90, 216, 232);
+    padding: .5rem 3.525rem;    
+
+}
+/* hide navlist */
+.navlist {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+}
+.item-list {
+    display: none;
+    position: absolute;
+
+}
+.navbar li:hover .navlist {
+    display: block;
+}
+.navlist li:hover .item-list {
+    display: block;
+    left: 8.75rem;
+    top: 2.1rem;
+}
+.navbar li a:hover {
+    background-color: rgb(117, 151, 163);
+}
+.navbar li a:active {
+    background-color:  rgb(90, 216, 232);
+}
+div.box {
+    margin: 5% auto;
+    
+}
+.box1 {
+    width: 30%;
+}
+fieldset {
+    background-color: rgba(255, 255, 255,0.9);
+    border: none;
+    padding: 1rem 2rem;
+}
+label {
+    display: inline-block;
+    width: 8rem;
+    text-align:right;
+}
+label, input {
+    margin: 1rem 0;
+}
+.btn {
+    display: block;
+    padding: 0.5rem 1rem ;
+    background-color:rgb(98, 98, 164);
+    margin: 0 auto;
+    border: none;
+    color: azure;
+}
+table {
+    text-align: center;
+    border-collapse: collapse;
+}
+td,th {
+    border: 1px solid;
+}
+

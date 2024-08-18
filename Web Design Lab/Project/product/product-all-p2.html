@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Me สินค้าทั้งหมด</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;700&family=Kanit:wght@300;400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- icon -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="../css/nav2.css">
+    <link rel="stylesheet" href="../css/product-all.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="menu-icon">
+                    <i class="icon ion-md-menu"></i>
+                    <i class="ion-android-close"></i>
+                </div>
+                <a href="../index.html" class="logo">
+
+                    <img src="../img/logo-coftea.png" alt="">
+                </a>
+                <ul class="nav-list">
+                    <li>
+                        <a href="../index.html">หน้าหลัก</a>
+                    </li>
+                    <li>
+                        <a href="../product/product-all.html">สินค้า
+                            <i class="icon ion-md-arrow-dropdown"></i>
+                            <i class="icon ion-md-arrow-dropright change-icon"></i>
+
+                        </a>
+                        <ul class="sub-menu">
+                            <li>
+                                <a href="../product/coffee-product/coffee-product.html">สินค้าประเภทกาแฟ
+                                    <i class="icon ion-md-arrow-dropright"></i>
+                                </a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="../product/coffee-product/coffee-brand.html#drink-me">แบรนด์ Drink
+                                            Me</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/coffee-product/coffee-brand.html#nescafe">แบรนด์ Nescafe</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/coffee-product/coffee-brand.html#moccona">แบรนด์ Moccona</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/coffee-product/coffee-brand.html#maxim">แบรนด์ Maxim</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="../product/tea-product/tea-product.html">สินค้าประเภทชา
+                                    <i class="icon ion-md-arrow-dropright more"></i>
+                                </a>
+
+
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="../product/tea-product/tea-brand.html#frink-me">แบรนด์ Drink ME</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/tea-product/tea-brand.html#nestea">แบรนด์ Nestea</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/tea-product/tea-brand.html#twining">แบรนด์ Twining</a>
+                                    </li>
+                                    <li>
+                                        <a href="../product/tea-product/tea-brand.html#cha-thai">แบรนด์ Cha-Thai</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../article/article.html">บทความ
+                            <i class="icon ion-md-arrow-dropdown"></i>
+                            <i class="icon ion-md-arrow-dropright change-icon"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../article/article-coffee.html">บทความเกี่ยวกับกาแฟ</a>
+                                </li>
+                                <li>
+                                    <a href="../article/article-tea.html">บทความเกี่ยวกับชา</a>
+                                </li>
+                                <li>
+                                    <a href="../article/recipes-coffee.html">สูตรชงชาและกาแฟ</a>
+                                </li>
+
+                            </ul>
+                        
+                    </li>
+                    <li>
+                        <a href="../faq.html">FAQs</a>
+                    </li>
+                    <li>
+                        <a href="../about-us/about-us.html">เกี่ยวกับเรา
+                            <i class="icon ion-md-arrow-dropdown"></i>
+                            <i class="icon ion-md-arrow-dropright change-icon"></i></a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../about-us/our-product.html">ที่มาสินค้าของเรา</a>
+                                </li>
+                                <li>
+                                    <a href="../about-us/connection.html">ตัวแทนจำหน่าย</a>
+                                </li>
+                            </ul>
+                        
+                    </li>
+                    <li>
+                        <a href="../contact.html">ติดต่อ</a>
+                    </li>
+                    <li class="move-right btn">
+                        <a href="../user/login.html">Log in</a>
+                    </li>
+                    <li class="menu-icon-right">
+                        <a href="../user/cart.html"><i class="ion-bag"></i></a>
+                    </li>
+                </ul>
+            </nav>
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">หน้าหลัก</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">สินค้า</li>
+                </ol>
+                <div class="move-right">
+                    Search : <input type="text" name="search" id="search" class="search">
+                    <button class="search-btn"><i class="ion-android-search"></i></button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="img-head">
+        <h1>สินค้า</h1>
+    </div>
+
+    <div class="wrapper">
+        
+        <div class="product">
+            <!-- 16 -->
+            <div class="box item16">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/cha-thai-jiao-gu-lan.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 17 -->
+            <div class="box item17">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/cha-thai-thai-tea.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 18 -->
+            <div class="box item18">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/maxim1-1.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 19 -->
+            <div class="box item19">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/maxim2-1.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 20 -->
+            <div class="box item20">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/maxim3-1.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 21 -->
+            <div class="box item21">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twining-ceylon1.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 22 -->
+            <div class="box item22">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twining-darjeeling.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 23 -->
+            <div class="box item23">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twining-english-bf1.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 24 -->
+            <div class="box item24">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twining-lady-grey-tea.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 25 -->
+            <div class="box item25">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twining-greentea1.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 26 -->
+            <div class="box item26">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twining-lemon.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 27 -->
+            <div class="box item27">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twining-peach.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 28-->
+            <div class="box item28">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/twinings-earl-grey1.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 29 -->
+            <div class="box item29">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/moc-al-caramel.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+            <!-- 30 -->
+            <div class="box item30">
+                <!-- img-box -->
+                <div class="slide-img">
+                    <img src="../img/Product/moc-al-latte.png" alt="">
+                    <!-- overlay -->
+                    <div class="overlay">
+                        <a href="" class="buy-btn">Buy Now</a>
+                    </div>
+                </div>
+                <!-- detail-box -->
+                <div class="detail-box">
+                    <!-- type -->
+                    <div class="type">
+                        <a href="#">Drink Me Coffee</a>
+                        <span>New Arrival</span>
+                        <!-- price -->
+                    </div>
+                    <a href="#" class="price">150B</a>
+                </div>
+            </div>
+
+        </div>
+        <nav class="page-nav">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="../product/product-all.html">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <span class="page-link">2</span>
+                </li>
+                <li class="page-item"><a class="page-link" href="../product/product-all-p3.html">3</a></li>
+            </ul>
+        </nav>
+    </div>
+    <footer>
+        <div class="row">
+            <div class="col-12 col-md-1 "></div>
+            <div class="col-12 col-md-5 ">
+                <ul>
+                    <li class="bold"><a href="#"> สินค้า</a></li>
+                    <li><a href="#">สินค้าประเภทกาแฟ</a>
+                        <ul>
+                            <li><a href="#">แบรนด์ Drink Me</a></li>
+                            <li><a href="#">แบรนด์ Nescafe</a></li>
+                            <li><a href="#">แบรนด์ Moccona</a></li>
+                            <li><a href="#">แบรนด์ Mixim</a></li>
+    
+                        </ul>
+                    </li>
+                    <li><a href="#">สินค้าประเภทชา</a>
+                        <ul>
+                            <li><a href="#">แบรนด์ Drink Me</a></li>
+                            <li><a href="#">แบรนด์ Nestea</a></li>
+                            <li><a href="#">แบรนด์ Twining</a></li>
+                            <li><a href="#">แบรนด์ Cha-Thai</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-5 ">
+                <ul>
+                    <li><a href="#">บทความ</a>
+                        <ul>
+                            <li><a href="#">บทความเกี่ยวกับกาแฟ</a></li>
+                            <li><a href="#">บทความเกี่ยวกับชา</a></li>
+                            <li><a href="#">สูตรชงชาและกาแฟ</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">คำถามที่พบบ่อย</a>
+                    <li><a href="#">เกี่ยวกับเรา</a>
+                        <ul>
+                            <li><a href="#">ที่มาสินค้าของเรา</a></li>
+                            <li><a href="#">ตัวแทนจำหน่าย</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ติดต่อ</a>
+    
+                </ul>
+            </div>
+            <div class="col-12 col-md-1 "></div>
+        </div>
+    </footer>
+
+
+
+
+
+        <script src="../js/nav2.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

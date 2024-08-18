@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn CSS Layout - Property</title>
+    <link rel="stylesheet" href="../css/page_layout.css">
+    <link rel="stylesheet" href="../css/property.css">
+     <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu&family=Karla&family=Raleway&display=swap"
+         rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <div id="wrapper">
+        <nav>
+            <p id="logo">Property</p>
+            <a href="../html/home.html">home</a>
+            <div class="dropdown">
+                <a href="../html/property.html">property</a>
+                <div class="dropdown-content">
+                    <a href="../html/property.html#diplay">display</a>
+                    <a href="../html/property.html#width">width</a>
+                    <a href="../html/property.html#box-sizing">box-sizing</a>
+                    <a href="../html/property.html#position">position</a>
+                    
+                </div>
+            </div>
+            <a href="../html/box-model.html">box-model</a>
+            <a target="_blank" href="../html/responsive.html">responsive design</a>
+            <div class="dropdown">
+                <a href="#">framework</a>  
+                <div class="dropdown-content dc2">
+                    <a target="_blank" href="http://www.blueprintcss.org/">blueprint</a>
+                    <a target="_blank" href="http://www.unsemantic.com/">unsemantic</a>
+                    <a target="_blank" href="https://cssframeworks.org/details/blue-trip/">BlueTrip</a>
+                    <a target="_blank" href="https://getbootstrap.com/">Bootstrap</a>
+                    <a target="_blank" href="http://susy.oddbird.net/">SUSY</a>
+                    <a target="_blank" href="http://foundation.zurb.com/">Foundation</a>
+                    <a target="_blank" href="http://cssframeworks.org/details/kube/">Kube</a>
+                    <a target="_blank" href="https://groundworkcss.github.io/">GroundworkCSS</a>
+                    <a target="_blank" href="http://semantic-ui.com/">Semantic UI</a>
+                    <a target="_blank" href="http://purecss.io/">Pure.css</a>
+                </div>  
+            </div>
+        </nav>
+        <div id="content">
+            
+            <article id="display">
+                <h2 style="margin-top: 1%;">display property</h2>
+                <p>display is CSS's most important property for controlling layout. Every element has a default display
+                    value depending on what type of element it is. The default for most elements is usually <span
+                        class="hl">block</span> or
+                    <span class="hl">inline.</span>
+                </p>
+                <p>A block element is often called a block-level element.</p>
+                <p>An inline element is always just
+                    called an inline element .</p>
+                <section>
+                    <h3>block</h3>
+                    <p> A block-level element starts on a new line and stretches out to the left and right as far as it
+                        can. Other common block-level elements are <span class="hl">div, p and form</span> and new in
+                        HTML5 are <span class="hl">header, footer,
+                            section, and more.</span> </p>
+                    <h4>example</h4>
+                    <div class="ex">
+                        <div style="text-align: center; 
+                        background-color:lightcoral;
+                        font-size:22px;">
+                            This is div.</div>
+                        <p style="text-align: center; text-indent: -1em; 
+                        background-color:lightseagreen; ">
+                            This is a paragraph.</p>
+                        <p style="text-align: center; text-indent: -1em; 
+                        background-color:lightgreen">
+                            This is a paragraph.</p>
+                    </div>
+                </section>
+                <section>
+                    <h3>inline</h3>
+                    <p>An inline element can wrap some text inside a paragraph < span> <span class="hl"> like
+                                this</span>
+                            < /span> without
+                                disrupting the flow of that paragraph. The a element is the most common inline element,
+                                since
+                                you use them for <a href="#">links.</a> </p>
+                </section>
+                <section>
+                    <h3>none</h3>
+                    <p>Another common display value is <span class="hl">none.</span> Some specialized elements such as
+                        script use this as their
+                        default. It is commonly used with JavaScript to hide and show elements without really deleting
+                        and recreating them. </p> <br>
+
+                    <p> This is different from <span class="hl"></span> visibility. Setting display to none will render
+                        the page as though the
+                        element does not exist. <span class="hl">visibility: hidden;</span> will hide the element, but
+                        the element will still
+                        take up the space it would if it was fully visible.</p>
+
+                    <br><br>
+                    <div class="ex">
+                        <p style="background-color: lightcoral;">Hello World</p>
+                        <p style="display: none; background-color: lightgreen;">Hello World</p>
+                        <p style="visibility: visible; background-color: lightyellow;">Hello World</p>
+                        <p style="visibility: hidden; background-color: lightpink;">Hello World</p>
+                    </div>
+                    <h4>code</h4>
+                    <div class="ex code"><br>
+                        <pre>
+    &lt;p&gt; style="background-color: lightcoral;">Hello World &lt;/p&gt; 
+    &lt;p&gt; style="display: none; background-color: lightgreen;">Hello World&lt;/p&gt;
+    &lt;p&gt; style="visibility: visible; background-color: lightyellow;">Hello World&lt;/p&gt;
+    &lt;p&gt; style="visibility: hidden; background-color: lightpink;">Hello World&lt;/p&gt;
+    </pre>
+
+                    </div>
+                </section>
+            </article>
+            <article id="width">
+                <h2>width property</h2>
+                <p>Setting the width of a block-level element will <span class="hl">prevent it from stretching out to
+                        the edges</span> of its
+                    container to the left and right. Then, you can set the left and right margins to auto to
+                    horizontally center that element within its container. The element will take up the width you
+                    specify, then the remaining space will be split evenly between the two margins.
+                </p><br>
+                <a style="font-size: 22px; text-decoration:underline;" target="_blank"
+                    href="../html/ex-page-width.html">let's check the
+                    example</a>
+            </article>
+            <article id="box-sizing">
+                <h2>box-sizing property</h2>
+                <p>When you set box-sizing: border-box; on an element, the padding and border of that element no longer
+                    increase its width.</p>
+                <p>but with box-sizing: border-box; on both elements</p>
+                <br>
+                <div class="simple">no box-sizing</div>
+                <div class="fancy">with box-sizing</div>
+            </article>
+            <article id="position">
+                <h2>position property</h2>
+                <p>In order to make more complex layouts, we need to discuss the position property. It has a bunch of
+                    possible values, and their names make no sense and are impossible to remember. Let's go through them
+                    one by one, but maybe you should bookmark this page too.</p>
+                <h3>static</h3>
+                <p>static is the default value. An element with position: static; <span class="hl">is not positioned in
+                        any special way.</span>
+                    A static element is said to be not positioned and an element with its position set to anything else
+                    is said to be positioned.</p>
+
+                <h3>relative</h3>
+                <div class="relative1">relative behaves the same as static <span class="hl">unless you add some extra
+                        properties.</span> </div>
+                <div class="relative2">Setting the top, right, bottom, and left properties of a relatively-positioned
+                    element will cause it to be adjusted away from its normal position. Other content will not be
+                    adjusted to fit into any gap left by the element.</div>
+                <h4>code</h4>
+                <div class="ex code">
+                    <pre>
+        <br>
+        .relative1 {
+            position: relative;
+            }
+        .relative2 {
+            position: relative;
+            top: -20px;
+            left: 20px;
+            background-color: white;
+            width: 500px;
+        }
+    </pre>
+                </div>
+                <h3>fixed</h3>
+                <p>A fixed element is positioned relative to the viewport, which means <span class="hl">it always stays
+                        in the same place</span>
+                    even if the page is scrolled. <span class="hl">As with relative,</span> the top, right, bottom, and
+                    left properties are
+                    used.</p>
+                <div class="fixed">
+                    Hi I'm here. this is fixed position!
+                </div>
+                <h4>code</h4>
+                <div class="ex code">
+                    <pre>
+        <br>
+        .fixed {
+            position: fixed;
+            bottom: 5em;
+            left: 0;
+            width: 200px;
+            background-color: white;
+        }
+        
+    </pre>
+                </div>
+
+                <h3>absolute</h3>
+                <p>absolute is the trickiest position value. <span class="hl">absolute behaves like fixed</span> except
+                    relative to the nearest
+                    positioned ancestor instead of relative to the viewport. If an absolutely-positioned element has no
+                    positioned ancestors, it uses the document body, and still moves along with page scrolling.
+                    Remember, a "positioned" element is one whose position is anything except static.</p>
+                <br><br>
+                <div class="relative">
+                    This element is <span class="hl">relatively-positioned.</span> If this element was position: static;
+                    its
+                    absolutely-positioned child would escape and would be positioned relative to the document body.
+                    <div class="absolute">
+                        This element is <span class="hl">absolutely-positioned.</span> It's positioned relative to its
+                        parent.
+                    </div></div>
+                    <h4>code</h4>
+                    <div class="ex code" >
+                        <pre>
+        <br>
+        .relative {
+            position: relative;
+            width: 600px;
+            height: 400px;
+          }
+        .absolute {
+            position: absolute;
+            top: 120px;
+            right: 0;
+            width: 300px;
+            height: 200px;
+        }
+        
+    </pre>
+                    </div>
+                </div>
+
+            </article>
+            
+        </div>
+
+        <footer> credit : <a target="_blank" href="https://learnlayout.com/">https://learnlayout.com/</a></footer>
+</body>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            documenty.body.scrollFunction.behavior = 'smooth';
+        }
+    </script>
+</body>
+
+</html>

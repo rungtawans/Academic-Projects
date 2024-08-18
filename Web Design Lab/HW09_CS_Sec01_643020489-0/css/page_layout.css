@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(200, 231, 240, 0.5);
+    font-family: 'Titillium Web', sans-serif;
+}
+.active-page {
+    background-color: rgba(200, 231, 240, 0.5);
+}
+.active-page:hover {
+    background-color: rgb(206, 226, 226);
+}
+.active-page:active {
+    background-color: #fff;
+}
+body {
+    background-image: url("../img/pexels-bagus-pangestu-1440476.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+}
+.navbar>ul {
+    list-style: none;
+    font-size: 1rem;
+    background-color: white;
+    box-sizing: border-box;
+    margin-top: 0px;
+    box-shadow: 0 1px 10px rgb(133, 165, 192);
+}
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 17px;
+    text-align: center;
+}
+.navbar ul li {
+    width: 200px;
+    display: inline-block;
+}
+/* center */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+.item {
+    width: 200px;
+    padding-left: 0px;
+    display: inline-block;
+    font-size: 0.9rem;
+}
+/* hide navlist */
+.navbar ul li ul {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+}
+.navbar ul li:hover {
+    background-color: rgb(206, 226, 226);
+    box-sizing: border-box;
+}
+.navbar ul li:hover .item {
+    display: block;
+    background-color: white;
+}
+h1 {
+    font-family: 'Rampart One', cursive;
+}
+.navbar ul li:active {
+    background-color: #fff;
+}

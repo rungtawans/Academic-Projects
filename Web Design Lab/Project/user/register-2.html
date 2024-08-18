@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>register</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/nav2.css">
+    <link rel="stylesheet" type="text/css" href="./project-wai/register.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("./img/coffee-and-tea-index.png");
+            font-family: 'Kanit', sans-serif;
+            box-sizing: border-box;
+        }
+
+        fieldset {
+            margin: 5px;
+
+            text-align: center;
+            font-size: 1.5rem;
+            width: max-content;
+            padding: 20px;
+            background-color: #ae8777;
+            border-radius: 5px;
+        }
+
+        .register {
+            text-align: right;
+        }
+
+        input[type="text"] {
+            border: 2px solid #8b6759;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        input[type="password"] {
+            border: 2px solid #8b6759;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+
+        input[type="email"] {
+            border: 2px solid #8b6759;
+            margin-top:  5px;
+            border-radius: 5px;
+        }
+
+        input[type="tel"] {
+            border: 2px solid #8b6759;
+            border-radius: 5px;
+            margin-top: 5px;
+        }
+
+        .box-2 {
+            float: right;
+            width: 100%;
+            margin-top: 5px;
+
+        }
+
+        textarea {
+            border: 2px solid #8b6759;
+            border-radius: 5px;
+
+
+        }
+
+        .box-3 {
+            text-align: center;
+        }
+
+        label {
+
+            text-align: right;
+            margin-right: 0;
+        }
+
+        input[type="submit"] {
+            text-align: center;
+            padding: 0 5px;
+            margin: 0 auto;
+            background-color: #5d7b45;
+            color: white;
+            padding: 0 15px;
+            border-radius: 5px;
+            border: none;
+            margin-top: 5px;
+            float: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content col-med position-absolute top-50 start-50 translate-middle">
+        <form action="./profile.html" method="post" id="myForm" class="col-med">
+            <fieldset>
+                <legend class="mb-3"> Register</legend>
+                <div class="register">
+                    First name: <input type="text" name="fname" maxlength="21"><br>
+
+                    Last name : <input type="text" name="lname" maxlength="21"><br>
+
+                    Email: <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" maxlength="21"><br>
+
+                    Password: <input type="password" name="password" ><br>
+
+                    Confirm password: <input type="password" name="conpassword" ><br>
+
+                    Tel: <input type="tel" name="phone" ><br>
+
+                    <div class="box-2">
+                        <label for="address" style="margin-left: 5px;">Address:</label>
+                        <textarea name="address" id="address" cols="22" rows="10"
+                            style="vertical-align: top; "></textarea><br>
+
+                    </div>
+                    <div class="box-3">
+                        <input type="submit" id="submit" value="log in" onclick="myFunc(submit)">
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        function checkpassword(form) {
+            password1 = form.password.value;
+            password2 = form.conpassword.value;
+            if (password1 != password2) {
+                alert("Password did not match");
+            } else {
+                return true;
+            }
+        } function myFunc(form) {
+            alert("Successful!");
+
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

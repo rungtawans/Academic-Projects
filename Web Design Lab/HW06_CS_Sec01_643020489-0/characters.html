@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light and Night</title>
+    <link rel="stylesheet" href="./css/home_stylessheet.css">
+    <link rel="stylesheet" href="./css/characters_stylesssheet.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Serif+SC&family=Open+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="head_video">
+        <img src="./img/Light_and_night_logo.webp" alt="Light and Night Logo">
+        <p>Light and Night</p>
+    </div>
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <a href="characters.html">Characters</a>
+            <div class="dropdown-content">
+                <a href="characters.html#osborn">Osborn</a>
+                <a href="characters.html#evan">Evan</a>
+                <a href="characters.html#sariel">Sariel</a>
+                <a href="characters.html#jesse">Jesse</a>
+                <a href="characters.html#charlie">Charlie</a>
+            </div>
+        </div>
+        <!-- <a href="story.html">Story</a> -->
+        <div class="dropdown">
+            <a class="a-drop">Official</a>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://love.qq.com/">Website</a>
+                <a target="_blank" href="https://weibo.com/u/6880285576">Weibo</a>
+                <a target="_blank" href="https://space.bilibili.com/434391603">BiliBili</a>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="f">Characters</h1>
+
+    <div id="osborn">
+        <img class="charpic" src=".\img\Screenshot_2022-08-07-09-58-02-43.jpg" alt="">
+        <div class="content">
+            <h3 class="name">Osborn</h3>
+            <div class="solid"></div>
+            <span class="cn"><span class="q">"</span> 赛车的终点是赛道的尽头，而我的终点是你的身边。<span class="q">"</span></span>
+            <p> The end of the race is the end of the track, but my final destination is by your side.</p>
+            
+        </div>
+    </div>
+    <div id="evan">
+        <img class="charpic" src=".\img\Screenshot_2022-08-07-10-05-29-07.jpg" alt="">
+        <div class="content">
+            <h3 class="name">Evan</h3>
+            <div class="solid"></div>
+            <span class="cn"><span class="q">"</span> 无论何时都可以呼唤我的名字，它就是为你定制的咒语。<span class="q">"</span></span>
+            <p>
+                You can call my name anytime, it is a charm for you.
+            </p>
+
+        </div>
+    </div>
+    <div id="sariel">
+        <img src="img\Screenshot_2022-08-07-10-07-00-14.jpg" alt="" class="charpic">
+        <div class="content">
+            <h3 class="name">Sariel</h3>
+            <div class="solid"></div>
+            <span class="cn"><span class="q">"</span> 人世间的喧嚣令人厌倦，但这里还有个笨蛋，我不能不管。<span class="q">"</span></span>
+            <p>
+                The hustle and bustle of the human world is tiresome, but there is still an idiot here that I can't
+                ignore.</p>
+
+        </div>
+    </div>
+    <div id="jesse">
+        <img src=".\img\Screenshot_2022-08-07-10-02-33-82.jpg" alt="" class="charpic">
+        <div class="content">
+            <h3 class="name">Jesse</h3>
+            <div class="solid"></div>
+            <span class="cn"><span class="q">"</span> 抓紧我的手，走吧，我们一起去更大的舞台! <span class="q">"</span></span>
+            <p>
+                Hold on to my hand, let us embark onto a bigger stage together!</p>
+
+        </div>
+    </div>
+    <div id="charlie">
+        <img src=".\img\Screenshot_2022-08-07-10-03-22-89.jpg" alt="" class="charpic">
+        <div class="content">
+            <h3 class="name">Charlie</h3>
+            <div class="solid"></div>
+            <span class="cn"><span class="q">"</span> 我不会再让你逃走第二次，我的未婚妻。<span class="q">"</span></span>
+            <p>
+                I won't let you escape from me a second time, my fiancée.
+            </p>
+
+        </div>
+    </div>
+
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>

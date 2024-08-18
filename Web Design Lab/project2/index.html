@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mint's Site</title>
+    <link rel="stylesheet" href="./css/page_layout.css">
+    <link rel="stylesheet" href="./css/home.css">
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Syncopate:wght@400;700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="main-menu">
+            <li><a href="./html/index.html" class="active-page">Home</a></li>
+            <li><a href="./html/about-me.html">About me</a></li>
+            <li><a href="./html/lab.html">Lab &#9662</a>
+                <ul class="item">
+                    <li><a href="./html/lab1.html">Lab 1</a></li>
+                    <li><a href="./html/lab2.html">Lab 2</a></li>
+                    <li><a href="./html/lab3.html">Lab 3</a></li>
+                    <li><a href="./html/lab4.html">Lab 4</a></li>
+                    <li><a href="./html/lab5.html">Lab 5</a></li>
+                    <li><a href="./html/lab6.html">Lab 6</a></li>
+                    <li><a href="./html/lab7.html">Lab 7</a></li>
+                    <li><a href="./html/lab8.html">Lab 8</a></li>
+                    <li><a href="./html/lab9.html">Lab 9</a></li>
+                    <li><a href="./html/lab10.html">Lab 10</a></li>
+                    <li><a href="./html/lab11.html">Lab 11</a></li>
+                    <li><a href="./html/lab12.html">Lab 12</a></li>
+                    <li><a href="./html/lab13.html">Lab 13</a></li>
+
+
+                </ul>
+            </li>
+            <li><a href="../html/contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="container">
+        <h1>Hello everyone! Welcome to my Porfolio ^-^</h1>
+        <h3>มิ้นท์หวังว่าเว็บไซต์นี้จะทำให้ทุกคนรู้จักมิ้นท์มากขึ้น และเห็นถึงพัฒนาการต่างๆ ของมิ้นท์นะคะ!!</h3>
+
+        <div class="img-section">
+            <img class="img-1" id="myImg-1" src="./img/pic-2.jpg" alt="Mint at Hong Moon Mang Khon Kaen City Museum">
+            <img class="img-2" id="myImg-2" src="./img/sunflower-and-mirror.jpg" alt="Sunflowers and Mirror">
+            <img class="img-gif" id="myImg-3" src="./video/vdo-3.gif"
+                alt="GIF picture of Mint at Hin Shang Si View Point">
+            <img class="img-3" id="myImg-4" src="./img/pic-8.jpg" alt="The back side of Mint">
+
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+
+        <h1>About This Subjet</h1>
+
+        <div class="intro-section">
+            <img src="./img/pic-4.jpg" alt="Mint picture">
+            <div>
+                <p><span class="em">ได้อะไรบ้างจากวิชานี้</span> ในช่วงที่ต้องลงทะเบียนเลือกรายวิชา
+                    มิ้นท์ยังไม่ได้มีความสนใจ
+                    ในวิชาไหนเป็นพิเศษ แต่ที่เลือกลงวิชานี้เพราะคิดว่าอาจจะเป็นทางที่ชอบค่ะ
+                    (แต่หลังเรียนจบก็รู้สึกว่าไม่ได้ชอบขนาดนั้น 5555)
+                    ส่วนตัวชอบวิธีการสอบเก็บคะแนนรายสัปดาห์มากๆ ค่ะ เพราะในช่วงระหว่างเรียน
+                    มิ้นท์ก็ไม่ค่อยได้ทบทวนเท่าไหร่ แต่พอมีสอบรายสัปดาห์ก็ต้องทำให้อ่านหนังสือต่อเนื่องมากขึ้น
+                    ในช่วงระหว่างเรียน มิ้นท์คิดว่ามิ้นท์ยังอ่อนในเรื่องไอเดีย
+                    การออกแบบ แต่ก่อนเวลาดูเว็บไซต์ต่างๆ ก็จะดูแบบผ่านๆ
+                    แต่เดี๋ยวนี้ก็เริ่มดูเป็นตัวอย่างทั้งที่เว็บไซต์นั้นดียังไง ไม่ดียังไง เพื่อเพิ่มไอเดีย
+                    ให้ตัวเองมากขึ้นค่ะ
+
+
+                </p>
+
+
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+    </div>
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img1 = document.getElementById("myImg-1");
+        var img2 = document.getElementById("myImg-2");
+        var img3 = document.getElementById("myImg-3");
+        var img4 = document.getElementById("myImg-4");
+
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img1.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img2.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img3.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+        img4.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            captionText.innerHTML = this.alt;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+    </script>
+
+</body>
+<footer>
+    Thank you for visiting.
+</footer>
+</html>

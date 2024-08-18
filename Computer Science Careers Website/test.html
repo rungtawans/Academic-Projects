@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <input id="score" type="number" min="1" max="10" step="1" value="5">
+    <input type="submit" value="ยืนยัน" onclick="getScore()">
+
+    <script>
+        function getScore() {
+          let score = document.getElementById("score");
+        //   score = score.textContent();
+          alert(score.value);
+        }
+      </script>
+</html>

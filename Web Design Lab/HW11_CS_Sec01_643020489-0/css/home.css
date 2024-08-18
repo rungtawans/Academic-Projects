@@ -1,0 +1,179 @@
+.font-logo {
+    width: 50%;
+    float: left;
+    margin-top: 4%;
+}
+
+div.content-head {
+    width: 50%;
+    float: right;
+    margin: 12% 0 0%;
+    padding-right: 10%;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 2%;
+}
+
+h1 span.caps {
+    color: #183980
+}
+
+h2 {
+    margin: 1.5em 0;
+    text-align: center;
+    border: 2px solid #5C6B8B;
+    padding: 10px;
+    color: #5C6B8B;
+    border-radius: 0.5em;
+}
+
+p {
+    font-size: 1.2em;
+    text-indent: 2em;
+}
+p span.hl {
+    color: #5C6B8B;
+}
+
+article.content {
+    clear: both;
+}
+
+section {
+    width: 40%;
+    margin: 5%;
+    float: left;
+}
+
+img.img-table {
+    width: 100%;
+    margin-top: 1.5em;
+}
+
+.load-icon {
+    float: right;
+}
+
+section p {
+    padding: 0 5%;
+}
+
+img.icon {
+    width: 10%;
+    padding: 2em 2%;
+    min-width: 50px;
+}
+img.icon:hover {
+    opacity: 0.75;
+}
+
+
+div.icon {
+    margin-left: 2em;
+}
+
+div.a-head {
+    display: flex;
+
+}
+
+a.a-head {
+    border-right: 1px solid;
+    border-left: 1px solid;
+    padding: 0 1em;
+}
+
+div.a-head {
+    margin-top: 1em;
+}
+
+svg.arrow {
+    color: #5C6B8B;
+    margin-top: 30%;
+}
+
+table {
+    margin: 5% auto;
+}
+
+table,
+tr,
+td {
+    padding: 3% 5%;
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    background-color: #EDF1FF;
+}
+
+table tr td a {
+    text-decoration: none;
+    color: black;
+}
+
+table tr td a:hover {
+    text-decoration: underline;
+    color: #5C6B8B;
+}
+
+
+
+@media screen and (max-width:576px){
+    h1 {
+        font-size: 1.5em;
+        padding: 2%;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    div.a-head {
+        display: flex;
+    }
+
+    a.a-head {
+        font-size: 0.8em;
+    }
+
+    .font-logo {
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    div.content-head {
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    section {
+        width: 100%;
+        padding: 2%;
+        margin: 5% 0 0 0;
+    }
+    svg.arrow {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:1024px) {
+    svg.arrow {
+        display: none;
+    }
+    p, table tr td a {
+        font-size: 1em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+}

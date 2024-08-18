@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 2 </title>
+    <link rel="stylesheet" href="./ex2.css">
+    
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+             <legend> <h2>Employment Application</h2> </legend>
+             <div class="box">
+                <div class="box-1">
+                    <div>
+                        <label class="req">Which position are you applyinf for</label> <br>
+                        <select name="position" id="position"> 
+                            <option value="" hidden></option>
+                            <option value="qa">QA</option>
+                            <option value="sa">SA</option>
+                            <option value="ux-ui">UX/UI</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="req">Are you willing to relocate?</label><br>
+                        <input type="radio" name="relocate" id="relocate">Yes<br>
+                        <input type="radio" name="relocate" id="relocate">No
+                    </div>
+                    <div>
+                        <label class="req">When can you start?</label><br>
+                        <input type="date" name="date">
+                        
+                    </div>
+                    <div>
+                        <label>Portfolio Web Site</label><br>
+                        <input type="text" name="link-port" value="http://" >
+                    </div>
+                    <div>
+                        <label>Attach a copy of Your Resnume</label><br>
+                        <input type="file" name="resume"> 
+                    </div>
+                </div>
+                <div class="box-2">
+                    <div>
+                        <h3>Your contact information</h3>
+                        <div class="align-bottom">
+                            <label class="req">Name</label><br>
+                            <input type="text" name="fname" size="10"><br>
+                            <p>First</p> 
+                        </div>
+                        <div class="align-bottom">
+                            <input type="text" name="lname" > <br>
+                            <p>Last</p>
+                        </div>
+                    </div>
+                    <div>
+                        <label class="req">Email Address</label><br>
+                        <input type="email" name="email" size="60">
+                    </div><br>
+                    <div>
+                        <label class="req">Phone</label><br>
+                        <div class="align-bottom">
+                            <input type="tel" name="tel" size="3"> - <br><p>###</p> 
+                        </div>
+                        <div class="align-bottom">
+                            <input type="tel" name="tel" size="3"> - <br><p>###</p> 
+                        </div>
+                        <div class="align-bottom">
+                            <input type="tel" name="tel" size="4"> <br><p>####</p> 
+                        </div>
+                         
+                    </div>
+                    <input type="submit" value="Submit">
+                </div>
+             </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

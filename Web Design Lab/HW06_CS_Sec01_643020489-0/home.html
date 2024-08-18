@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light and Night</title>
+
+    <link rel="stylesheet" href="./css/home_stylessheet.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Noto+Serif+SC&family=Open+Sans&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div id="head_video">
+        <img src="./img/Light_and_night_logo.webp" alt="Light and Night Logo">
+        <p>Light and Night</p>
+    </div>
+    <nav id="navbar">
+        <a href="home.html">Home</a>
+        <div class="dropdown">
+            <a href="characters.html">Characters</a>
+            <div class="dropdown-content">
+                <a href="characters.html#osborn">Osborn</a>
+                <a href="characters.html#evan">Evan</a>
+                <a href="characters.html#sariel">Sariel</a>
+                <a href="characters.html#jesse">Jesse</a>
+                <a href="characters.html#charlie">Charlie</a>
+            </div>
+        </div>
+        <!-- <a href="story.html">Story</a> -->
+        <div class="dropdown">
+            <a class="a-drop">Official</a>
+            <div class="dropdown-content">
+                <a target="_blank" href="https://love.qq.com/">Website</a>
+                <a target="_blank" href="https://weibo.com/u/6880285576">Weibo</a>
+                <a target="_blank" href="https://space.bilibili.com/434391603">BiliBili</a>
+            </div>
+        </div>
+
+    </nav>
+
+    <iframe class="f" width="100%" height="620vh" width="560" height="315"
+        src="https://www.youtube.com/embed/IdW3zfU5scg" title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>Your browser does not support playing this Video</iframe>
+
+    <h1>Light and Night</h1>
+    <img width="60%" style="padding: 2% 20%; background-color:rgb(25, 25, 25);" src="./img/light_and_night_pv.png"
+        alt="light and night all charracter">
+  
+        <p class="describe">Light and Night <span class="cn">(光与夜之恋)</span>  is an immersive and interactive Otome mobile game by Tencent. Players assume the role of
+        the main character. Make choices that will change your destiny and meet the men that will join you in
+        experiencing a world of intrigue and love.</p>
+
+    
+
+
+
+
+
+
+
+
+
+    <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function () { myFunction() };
+
+        // Get the navbar
+        var navbar = document.getElementById("navbar");
+
+        // Get the offset position of the navbar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

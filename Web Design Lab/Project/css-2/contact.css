@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}body{
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    background-image: url("");
+}
+.content{
+    width: 100%;
+    height: max-content;
+    padding: 20px;
+    background-color: #dcb4a5;
+}h1{
+    clear: both;
+    width: 100%;
+}

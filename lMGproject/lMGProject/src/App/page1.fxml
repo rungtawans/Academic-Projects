@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.goToPage">
+    <children>
+        <AnchorPane prefHeight="52.0" prefWidth="600.0" style="-fx-background-color: #1c1a1f;">
+            <children>
+                <Text fill="WHITE" layoutX="26.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="IMG" wrappingWidth="129.983642578125">
+                    <font>
+                        <Font name="JasmineUPC" size="51.0" />
+                    </font>
+                </Text>
+                <Button fx:id="buttonMain" layoutX="138.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToMain" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="HOME" textFill="WHITE" />
+                <Button fx:id="buttonPage1" layoutX="236.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage1" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="ART" textFill="WHITE" />
+                <Button fx:id="buttonPage2" layoutX="334.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage2" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="UX/UI" textFill="WHITE" />
+                <Button fx:id="buttonPage3" layoutX="432.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage3" prefHeight="48.0" prefWidth="98.0" style="-fx-background-color: #1c1a1f;" text="GRAPHIC" textFill="WHITE" />
+                <Button fx:id="buttonPage4" layoutX="530.0" layoutY="6.0" mnemonicParsing="false" onAction="#GoToPage4" prefHeight="48.0" prefWidth="106.0" style="-fx-background-color: #1c1a1f;" text="COLORS" textFill="WHITE" />
+            </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="518.0" prefWidth="600.0" style="-fx-background-color: #484848;">
+            <children>
+                <Line endX="335.39996337890625" endY="0.9999939203262329" layoutX="303.0" layoutY="-1.0" startX="-303.0" startY="0.9999939203262329" stroke="WHITE" />
+                <ImageView fitHeight="133.0" fitWidth="158.0" layoutX="25.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+<!--                        <Image url="@Fashion-designer-clothing-design-paper.jpeg" />-->
+                        <Image url="@img/Fashion-designer-clothing-design-paper.jpeg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="136.0" fitWidth="228.0" layoutX="192.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+<!--                        <Image url="@Screen%20Shot%201400-12-14%20at%2020.06.14.png" />-->
+                        <Image url="@img/Screen Shot 1400-12-14 at 20.06.14.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="25.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+<!--                        <Image url="@275746172_644763846611638_4613827623822137640_n.jpg" />-->
+                        <Image url="@img/275746172_644763846611638_4613827623822137640_n.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="216.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+<!--                        <Image url="@106898784_2712156939042897_8564985044980088518_n.jpeg" />-->
+                        <Image url="@img/106898784_2712156939042897_8564985044980088518_n.jpeg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="127.0" fitWidth="193.0" layoutX="429.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+<!--                        <Image url="@Tokiwaso-Manga-Museum6.png" />-->
+                        <Image url="@img/Tokiwaso-Manga-Museum6.png" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="331.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+<!--                        <Image url="@3638280.jpeg" />-->
+                        <Image url="@img/3638280.jpeg" />
+                    </image>
+                </ImageView>
+                <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="510.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+<!--                        <Image url="@_.jpeg" />-->
+                        <Image url="@img/_.jpeg" />
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
+

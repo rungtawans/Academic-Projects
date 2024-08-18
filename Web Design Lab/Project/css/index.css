@@ -1,0 +1,409 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+.row>* {
+    padding-left: 0;
+    padding-right: 0;
+}
+.promotion .col-md-6.col-12{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.index-head {
+    background-image: url(../img/coffee-and-tea-index.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.index-head div div {
+    height: 100vh;
+    background-color: rgba(226, 226, 226, 0.5);
+    padding: 40vh 5rem;
+}
+.wrapper {
+    margin: 0 5%;
+}
+h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #5b423a;
+    font-size: 8rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 1rem;
+
+}
+
+h3 {
+    border-bottom: 2px solid #ceb288 ;
+    /* border-top: 2px solid #ceb288 ; */
+
+    font-size: 4rem;
+    text-align: center;
+    color: #5b423a;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+
+}
+
+.button {
+    display: block;
+    width: 15rem;
+    padding: 1rem 3rem;
+    border: none;
+    margin: 3rem auto;
+    text-transform: uppercase;
+    background-color: #5b423a;
+    color: white;
+    text-align: center;
+
+}
+button.search-btn {
+    display: inline;
+    margin: 0;
+    padding: 0.2rem 1.5rem;  
+    background-color: #f0f0f0;
+    color: #1e1e1e;
+}
+button.search-btn:active {
+    display: inline;
+    margin: 0;
+    padding: 0.2rem 1.5rem;  
+    background-color: #5b423a;
+    color: white;
+}
+.move-right {
+    color: white;
+}
+
+div.promotion {
+    margin-top: 10rem;
+    /* padding: 12rem auto 0; */
+}
+
+div.promotion h3 {
+    margin-bottom: 5rem;
+}
+
+div.promotion div {
+    /* padding: 0 3rem; */
+    position: relative;
+}
+
+.promotion img {
+    width: 100%;
+    min-width: 250px;
+   
+    
+}
+
+.overlay {
+    position: absolute;
+    float: left;
+    top: -45%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+div.font-deal p {
+    font-size: 16px;
+    line-height: 2em;
+}
+
+
+.font-deal {
+    color: white;
+    font-size: 400%;
+    text-shadow: -0.5rem -0.5rem 10px #1e1e1e;
+    line-height: 6rem;
+}
+
+.font-deal:hover {
+    color: #e1e1e1;
+    cursor: pointer;
+    text-shadow: 1px 1px 10px#1e1e1e;
+    transition: text-shadow 560ms;
+
+
+}
+
+.promotion p {
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 1rem;
+    
+
+}
+
+.store {
+    padding: 5rem;
+    /* height: 70vh; */
+    background-color: #ceb288;
+    border-radius: 1rem;
+
+}
+
+.store h3 {
+    margin-bottom: 5rem;
+}
+
+.article {
+    padding: 10rem 0;
+    /* height: 100vh; */
+}
+.article h3 {
+    margin-bottom: 5rem;
+}
+.box {
+    width: 20rem;
+    height: auto;
+    box-shadow: 2px 2px 30px rgb(0, 0, 0, 0.2);
+    background-color: rgb(240, 240, 240);
+    border-radius: 10px;
+    overflow: hidden;
+    
+    /* position: absolute; */
+    /* left: 50%; */
+    /* top: 0; */
+    /* transform: translate(-50%, -50%); */
+}
+.slide-img {
+    /* height: 300px; */
+    position: relative;
+} 
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+    background-color: #efe7dc;
+}
+.detail-box {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+.type {
+    display: flex;
+    flex-direction: column;
+}
+.type a {
+    /* margin: 5px 0px; */
+    font-weight: bold;
+    /* padding-right: 8px; */
+    color: #5b423a;
+
+}
+.type span {
+    color: grey;
+}
+.price {
+    font-weight: 600;
+    color: #5b423a;
+
+}
+.price:hover, .type a:hover {
+    color: #ceb288;
+}
+.price:active, .type a:active {
+    color: #5b423a;
+}
+
+.slide-img .overlay {
+    width: 106%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: rgba(128, 128, 128, 0.2); */
+    /* background-image: url(../img/Product/drink-me-coffee2.png);
+    background-size: cover; */
+    display: flex;
+    justify-content: center;
+    align-items:flex-end; 
+}
+.slide-img .overlay {
+    visibility: hidden;
+}
+.slide-img:hover .overlay {
+    visibility:visible;
+    transition: 1s;
+    animation: fade 0.5s;
+
+}
+.buy-btn {
+    width: 100%;
+    /* height: 40px; */
+    text-align: center;
+    padding: 1rem;
+    background-color:#81716c;
+    color: white;
+}
+.buy-btn:hover {
+    color: white;
+}
+.buy-btn:active {
+    background-color: #ffffff;
+    color: #81716c;
+    /* transition: all ease 650ms; */
+
+}
+.card {
+    border: none;
+
+}
+div.highlight-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 5rem;
+    
+
+}
+div.more-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+div.card-body {
+    background-color: #efe7dc;
+}
+
+.card .btn {
+    padding: 0.5rem 2rem;
+    font-size: 1.6rem;
+    color: #fff;
+    border: 2px solid #5b423a;
+    background-color: #5b423a;
+}
+h4.card-title {
+    font-size: 2rem;
+}
+
+
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width:1024px) { 
+    h1 {
+        font-size:  300%;
+    }
+    .overlay {
+        float: left;
+        top: -25%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+   
+    .font-deal {
+        font-size: 250%;
+    }
+    .font-deal p {
+        font-size: 100%;
+        position: initial;
+
+    }
+}
+@media screen and (max-width:768px) {
+  
+    .index-head {
+        height: 60vh;
+    }
+
+    .index-head div {
+        height: 20vh;
+    }
+
+    .index-head div div {
+        height: 100%;
+        background-color: rgb(226, 226, 226);
+        padding: 2rem 3rem;
+    }
+
+    .index-head .button {
+        display: none;
+    }
+
+    div.promotion {
+        margin-top: 5rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .overlay {
+        float: left;
+        top: -20%;
+        left: 30%;
+        transform: translate(-50%, -50%);
+    }
+   
+
+    .font-deal {
+        font-size:  300%;
+        line-height: 5rem;
+    }
+    
+    div.highlight-card, div.more-card {
+        grid-template-columns: 1fr 1fr;
+        flex-wrap: wrap;
+        gap: 5rem;
+        
+    }
+}
+@media screen and (max-width:576px) {
+    div.highlight-card, div.more-card {
+        grid-template-columns: 1fr;
+       
+    }
+    .store {
+        padding: 5rem;
+    }
+    .overlay {
+        position: absolute;
+        float: left;
+        top: -28%;
+        left: 25%;
+        transform: translate(-50%, -50%);
+    }
+    .font-deal {
+        font-size: 250%;
+    }
+    .font-deal p {
+        font-size: 100%;
+        position: initial;
+
+    }
+    div.row.promotion div.col-md-6.col-12 {
+        margin-bottom: 0;
+    }
+    .box {
+        width: 15rem;
+    }
+}

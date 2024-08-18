@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(200, 231, 240, 0.5);
+    /* font-family: 'Titillium Web', sans-serif; */
+    font-family: 'Noto Sans Thai', sans-serif;
+    
+}
+.active-page {
+    background-color: rgb(255, 255, 255);
+}
+.active-page:hover {
+    background-color: #cee2e2;
+}
+.active-page:active {
+    background-color: #fff;
+}
+body {
+    background-image: url("../img/pexels-bagus-pangestu-1440476.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: center;
+    
+}
+.navbar>ul {
+    font-family: 'Titillium Web', sans-serif;
+    list-style: none;
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0);  
+    box-sizing: border-box;
+    margin: 0px;
+    box-shadow: 0 1px 10px #85a5c0;
+    padding-left: 0;
+}
+.navbar>ul:hover {
+    background-color: rgba(255, 255, 255);   
+    transition: 560ms; 
+
+}
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+    text-align: center;
+}
+.navbar ul li {
+    width: 100px;
+    display: inline-block;
+}
+/* center */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+}
+.item{
+    /* width: 100%; */
+    margin: 0 0;
+    /* padding: 0; */
+    /* padding-left: 0px; */
+    /* display: inline-block; */
+    font-size: 0.9rem;
+    background-color: #cee2e2;
+
+
+
+}
+.item li{
+    width: 25px;
+    display: inline-block;
+    background-color: #c8e7f080;
+}
+
+/* hide navlist */
+.navbar ul li ul {
+    display: none;
+    box-sizing: border-box;
+    position: absolute;
+    left: -1em;
+}
+.navbar ul li:hover {
+    background-color: #cee2e2;
+    box-sizing: border-box;
+}
+.navbar ul li:hover .item{
+    display: flex;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+}
+.navbar ul li .item li:hover{
+    background-color: #9dbcbc;
+}
+.navbar ul li:active {
+    background-color: #fff;
+}
+
+
+/* font-size */
+h1 {
+    font-family: 'Rampart One', cursive;
+    font-size: 1.25em;
+}
+h3 {
+    font-size: 1em;
+}
+footer {
+    text-align: center;
+    margin-top: 10%;
+    background-color: #cee2e2;
+    padding: .5em;
+}
+
+@media screen and (min-width:768px) {
+    /* font-size */
+    h1 {
+        font-size: 2.25em;
+    }
+    h3 {
+        font-size: 1.2em;
+    }
+
+    /* nav */
+    .navbar ul li{
+        width: 200px;
+        font-size: 1rem;
+    }
+    .navbar ul li ul li {
+        font-size: .9rem;
+    }
+    .navbar li a {
+        padding: 17px;
+    }
+}

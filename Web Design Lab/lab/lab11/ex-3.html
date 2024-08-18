@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./ex-3.css"> -->
+    <style>
+        .row {
+            display: grid;
+            grid-template-columns: repeat(3,auto);
+            gap: 10px;
+
+        }
+        .col-main, .col {
+            border: 1px solid;
+        }
+        .container {
+            margin: 5opx 10px;
+        }
+
+        @media screen and (max-width:1024px) {
+            .row {
+                grid-template-columns: repeat(2,auto);
+            }
+        }
+        @media screen and (max-width:576px) {
+            .row {
+                grid-template-columns: auto;
+            }
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="col-main">
+            <h1>Coumn 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates harum necessitatibus!
+                Facilis aut officia excepturi, saepe, voluptatum obcaecati, laborum laudantium quam voluptatem a
+                molestias maxime impedit accusantium aliquid dolorum?</p>
+       
+
+        </div>
+
+        <div class="row">
+            
+            <div class="col">
+                <h1>Coumn 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates harum necessitatibus!
+                    Facilis aut officia excepturi, saepe, voluptatum obcaecati, laborum laudantium quam voluptatem a
+                    molestias maxime impedit accusantium aliquid dolorum?</p>
+            </div>
+            <div class="col">
+                <h1>Coumn 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates harum necessitatibus!
+                    Facilis aut officia excepturi, saepe, voluptatum obcaecati, laborum laudantium quam voluptatem a
+                    molestias maxime impedit accusantium aliquid dolorum?</p>
+            </div>
+            <div class="col">
+                <h1>Coumn 1</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptates harum necessitatibus!
+                    Facilis aut officia excepturi, saepe, voluptatum obcaecati, laborum laudantium quam voluptatem a
+                    molestias maxime impedit accusantium aliquid dolorum?</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

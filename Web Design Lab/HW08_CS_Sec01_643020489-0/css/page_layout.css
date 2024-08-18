@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Anek Telugu', sans-serif;
+    font-family: 'Karla', sans-serif; */
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a,
+nav div {
+    display: inline;
+    color: white;
+    padding: 0 1.5%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #e1d0f1;
+    min-width: 130px;
+    padding: 0;
+    margin: 0 0 0 110px;
+}
+
+.dc2 {
+    margin: 0 0 0 610px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 10px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+nav a:hover {
+    cursor: pointer;
+    border-right: #fffbf0 2px solid;
+    border-left: #fffbf0 2px solid;
+}
+
+.dropdown-content a:hover {
+    cursor: pointer;
+    border-left: #574586 5px solid;
+    border-right: none;
+}
+
+p#logo {
+    float: right;
+    color: white;
+    font-size: 26px;
+}
+
+nav {
+    background-color: #574586;
+    padding: 2% 3%;
+    font-size: 20px;
+}
+
+footer {
+    background-color: #574586;
+    padding: 1.25% 5%;
+    clear: both;
+    text-align: center;
+    color: white;
+    
+}
+footer a {
+    color: white; 
+}
+
+div#wrapper {
+    width: 1200px;
+    background-color: #fde3f1;
+    margin: 0 auto;
+}
+
+div#content {
+    padding: 5% 8%;
+}
+
+body {
+    background-image: url(../img/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background.jpg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    background-position: fixed;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-family: 'Anek Telugu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Karla', sans-serif;
+    font-size: 32px;
+}
+
+h3 {
+    font-family: 'Karla', sans-serif;
+    font-size: 28px;
+}
+
+h4 {
+    font-family: 'Karla', sans-serif;
+    font-size: 24px;
+}
+
+p {
+    font-size: 22px;
+    text-indent: 3em;
+}
+
+span.hl {
+    background-color: pink;
+}

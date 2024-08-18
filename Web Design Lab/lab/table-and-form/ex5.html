@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" onsubmit="return valid()" name="myForm" id="myForm">
+        password : <input type="text" name="psw"> <br>
+        confirm password : <input type="text" name="conpsw" > <br>
+        <button type="submit">Send</button>
+    </form>
+
+    <script>
+        function valid() {
+            const psw = document.forms["myForm"]["psw"].value
+            const conpsw = document.getElementById("myForm")["conpsw"].value
+            if(psw==""){
+                alert("Must filed out")
+                return false
+            }
+            if(psw==conpsw) {
+                return true
+            }else{
+                alert("password must match")
+                return false /*cannot submit*/
+            }
+        }
+    </script>
+</body>
+</html>

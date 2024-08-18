@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar > ul {
+    list-style-type: none;
+    font-size: 1.2em;
+    background-color: rgb(202,202,202);
+    margin-top: 0;
+    box-sizing: border-box;
+
+}
+.navbar li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.2s;
+    padding: 17px;
+    text-align: center;
+}
+.navbar ul li {
+    width: 150px;
+    font-size: 0.8em;
+    display: inline-block;
+}
+.item {
+    width: 150px;
+    padding-left: 0;
+    display: none;
+}
+.navbar ul li ul {
+    position: absolute;
+    box-sizing: border-box;
+}
+.item-list {
+    width: 150px;
+    padding-left: 0;
+    left: 100%;
+    margin-top: -50px;
+    font-size: 1.2em;
+    display: none;
+}
+.navbar ul li:hover {
+    background-color: rgb(180,180,180);
+}
+.navbar ul li:hover .item {
+    display: inline-block;
+    background-color: rgb(170,170,170);
+}
+.navbar li .item li:hover .item-list {
+    display: block;
+    background-color: rgb(160,160,160);
+}
+
