@@ -1,6 +1,7 @@
 # Dormitory Management System
 
 This term project is for the Principles of Software Design and Development course. It utilizes Spring Boot to create a dormitory management system that implements CRUD operations for rooms, rental bills, and other relevant data. By applying SOLID principles and MVC architecture, the project aims to learn and apply these concepts practically.
+[see the presentation slide](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/dormitory%20management%20system%20presentation.pdf)
 
 ## UI Interface
 
@@ -19,4 +20,4 @@ Login as Resident
 ![Dashboard of resident](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/wireframe/DashboardResident.PNG)
 ![Bills Page of resident](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/wireframe/BillResident.PNG)
 
-[Presentation](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/dormitory%20management%20system%20presentation.pdf)
+
