@@ -19,3 +19,4 @@ Login as Resident
 ![Dashboard of resident](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/wireframe/DashboardResident.PNG)
 ![Bills Page of resident](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/wireframe/BillResident.PNG)
 
+[Presentation](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/dormitory%20management%20system%20presentation.pdf)
