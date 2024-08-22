@@ -20,4 +20,7 @@ Login as Resident
 ![Dashboard of resident](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/wireframe/DashboardResident.PNG)
 ![Bills Page of resident](https://github.com/rungtawans/Academic-Projects/blob/main/Dormitory%20Management%20System/wireframe/BillResident.PNG)
 
-
+## Group member
+1. Rungtawan Suttho (github : rungtawans)
+2. Parinyaporn Sangnolad (github : parinyap03)
+3. Thidapat Niwatham (github : Thidapat-Niwatham)
