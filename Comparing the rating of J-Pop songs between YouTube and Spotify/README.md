@@ -5,4 +5,4 @@ This project collects, explores, cleans, and transforms YouTube and Spotify API 
 
 ## Group member
 1. Rungtawan Suttho (github : rungtawans)
-2. Supawan Jamklang (github : @SupawanJamklang)
+2. Supawan Jamklang (github : SupawanJamklang)
