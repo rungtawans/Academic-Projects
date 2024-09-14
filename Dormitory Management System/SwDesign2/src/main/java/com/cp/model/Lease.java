@@ -19,62 +19,56 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
-
-@Entity 
-@Table(name="lease")
+@Entity
+@Table(name = "lease")
 public class Lease {
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="lease_id")
-     private Integer lease_id;
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "lease_id")
+	private Integer lease_id;
 
 	@JsonIgnore
-    @OneToMany(targetEntity=Bill.class, mappedBy="lease",
-            cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Bill> bill;
+	@OneToMany(targetEntity = Bill.class, mappedBy = "lease", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Bill> bill;
 
-    @JsonIgnore 
-    @ManyToOne
-    (optional=false)
-    @JoinColumn(name="id_card")
-    private Resident resident;
+	@JsonIgnore
+	@ManyToOne(optional = false)
+	@JoinColumn(name = "id_card")
+	private Resident resident;
 
-    @JsonIgnore 
-    @ManyToOne
-    (optional=false)
-    @JoinColumn(name="room_id")
-    private Room room;
+	@JsonIgnore
+	@ManyToOne(optional = false)
+	@JoinColumn(name = "room_id")
+	private Room room;
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @Column(name="start_date_lease")
-    private Date start_date_lease;
-    
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @Column(name="end_date_lease")
-    private Date end_date_lease;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	@Column(name = "start_date_lease")
+	private Date start_date_lease;
 
-    @Column(name="deposit")
-     private Integer deposit;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	@Column(name = "end_date_lease")
+	private Date end_date_lease;
 
-    @Column(name="discount")
-     private Integer discount;
+	@Column(name = "deposit")
+	private Integer deposit;
 
-    @Column(name="pet")
-     private String pet;
+	@Column(name = "discount")
+	private Integer discount;
 
-    @Column(name="lease_status")
-     private String lease_status;
+	@Column(name = "pet")
+	private String pet;
 
-    @Column(name="member")
-     private Integer member;
+	@Column(name = "lease_status")
+	private String lease_status;
 
-    
+	@Column(name = "member")
+	private Integer member;
+
 	public Lease() {
 		super();
 	}
 
-	
 	public Lease(Resident resident, Room room, Date start_date_lease, Date end_date_lease, Integer deposit,
 			Integer discount, String pet, Integer member, String lease_status) {
 		super();
@@ -193,5 +187,4 @@ public class Lease {
 		this.member = member;
 	}
 
-	
 }

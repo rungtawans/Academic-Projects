@@ -16,28 +16,26 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="districts")
+@Table(name = "districts")
 public class Districts {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private Integer zip_code;
 	private String name_th;
 	private String name_en;
-	
+
 	@JsonIgnore
 	@ManyToOne(optional = false)
 	@JoinColumn(name = "amphure_id")
 	private Amphures amphures;
-	
-	//link to Resident
-	@JsonIgnore
-	@OneToMany(targetEntity=Resident.class, mappedBy="districts",
-    		cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Resident> residents;
 
-	
+	// link to Resident
+	@JsonIgnore
+	@OneToMany(targetEntity = Resident.class, mappedBy = "districts", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Resident> residents;
+
 	public Districts() {
 		super();
 	}
@@ -101,5 +99,4 @@ public class Districts {
 		this.residents = residents;
 	}
 
-	
 }

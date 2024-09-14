@@ -16,25 +16,24 @@ import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
-@Entity 
-@Table(name="type")
+@Entity
+@Table(name = "type")
 public class Type {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 //	@UuidGenerator
-    @Column(name="type_id")
- 	private String type_id;
-	
-	@Column(name="price")
+	@Column(name = "type_id")
+	private String type_id;
+
+	@Column(name = "price")
 	private String price;
 
-	@Column(name="type_desc")
+	@Column(name = "type_desc")
 	private String type_desc;
-	
+
 	@JsonIgnore
-	@OneToMany(targetEntity=Room.class, mappedBy="type",
-    		cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Room> room;
+	@OneToMany(targetEntity = Room.class, mappedBy = "type", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Room> room;
 
 	public Type() {
 		super();
@@ -47,7 +46,7 @@ public class Type {
 		this.type_desc = type_desc;
 		this.room = room;
 	}
-	
+
 	public String getType_id() {
 		return type_id;
 	}
@@ -64,7 +63,6 @@ public class Type {
 		this.price = price;
 	}
 
-	
 	public String getType_desc() {
 		return type_desc;
 	}
@@ -81,5 +79,4 @@ public class Type {
 		this.room = room;
 	}
 
-	
 }

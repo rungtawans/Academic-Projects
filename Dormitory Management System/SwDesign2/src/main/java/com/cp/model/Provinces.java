@@ -1,6 +1,5 @@
 package com.cp.model;
 
-
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -17,7 +16,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="provinces")
+@Table(name = "provinces")
 public class Provinces {
 
 	@Id
@@ -26,16 +25,15 @@ public class Provinces {
 	private String code;
 	private String name_th;
 	private String name_en;
-	
+
 	@JsonIgnore
 	@ManyToOne(optional = false)
 	@JoinColumn(name = "geography_id")
 	private Geographies geographies;
-	
+
 	@JsonIgnore
-	@OneToMany(targetEntity=Amphures.class, mappedBy="provinces",
-    		cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Amphures> amphures;
+	@OneToMany(targetEntity = Amphures.class, mappedBy = "provinces", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Amphures> amphures;
 
 	public Provinces() {
 		super();
@@ -99,6 +97,5 @@ public class Provinces {
 	public void setAmphures(List<Amphures> amphures) {
 		this.amphures = amphures;
 	}
-	
-	
+
 }

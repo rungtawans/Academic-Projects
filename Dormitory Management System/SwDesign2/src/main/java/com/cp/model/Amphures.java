@@ -16,27 +16,25 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="amphures")
+@Table(name = "amphures")
 public class Amphures {
-	
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String code;
 	private String name_th;
 	private String name_en;
-	
+
 	@JsonIgnore
 	@ManyToOne(optional = false)
 	@JoinColumn(name = "province_id")
 	private Provinces provinces;
-	
-	@JsonIgnore
-	@OneToMany(targetEntity=Districts.class, mappedBy="amphures",
-    		cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Districts> districts;
 
-	
+	@JsonIgnore
+	@OneToMany(targetEntity = Districts.class, mappedBy = "amphures", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Districts> districts;
+
 	public Amphures() {
 		super();
 	}
@@ -99,6 +97,5 @@ public class Amphures {
 	public void setDistricts(List<Districts> districts) {
 		this.districts = districts;
 	}
-	
-	
+
 }

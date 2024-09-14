@@ -1,7 +1,6 @@
 package com.cp.model;
 
-	import java.util.List;
-
+import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.CascadeType;
@@ -17,34 +16,33 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name="room")
+@Table(name = "room")
 public class Room {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="room_id")
- 	private String room_id;
-	
-	@Column(name="room_status")
+	@Column(name = "room_id")
+	private String room_id;
+
+	@Column(name = "room_status")
 	private String room_status;
 
-	@Column(name="room_desc")
+	@Column(name = "room_desc")
 	private String room_desc;
-	
+
 	@JsonIgnore
 	@ManyToOne
 //	(optional=false)
-	@JoinColumn(name="type_id")
+	@JoinColumn(name = "type_id")
 	private Type type;
-	
-	@JsonIgnore
-	@OneToMany(targetEntity=Lease.class, mappedBy="room",
-    		cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Lease> lease;
 
-	
+	@JsonIgnore
+	@OneToMany(targetEntity = Lease.class, mappedBy = "room", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Lease> lease;
+
 	public Room() {
 		super();
 	}
+
 	public Room(String room_id, String room_desc, String room_status, Type type, List<Lease> lease) {
 		super();
 		this.room_id = room_id;
@@ -93,13 +91,10 @@ public class Room {
 	public void setLease(List<Lease> lease) {
 		this.lease = lease;
 	}
-	
+
 	public Room orElse(Object object) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	
-
-	
 }

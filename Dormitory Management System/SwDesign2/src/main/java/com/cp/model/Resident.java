@@ -17,48 +17,45 @@ import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 
-
-@Entity 
-@Table(name="resident")
+@Entity
+@Table(name = "resident")
 public class Resident {
 
 	@Id
-	//	@UuidGenerator
+	// @UuidGenerator
 //	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name="id_card")
+	@Column(name = "id_card")
 	private String id_card;
-	
-	@Column(name="first_name")
+
+	@Column(name = "first_name")
 	private String first_name;
-	
-	@Column(name="last_name")
+
+	@Column(name = "last_name")
 	private String last_name;
-	
-	@Column(name="email")
+
+	@Column(name = "email")
 	private String email;
-	
-	@Column(name="phone")
+
+	@Column(name = "phone")
 	private String phone;
-	
-	@Column(name="address")
+
+	@Column(name = "address")
 	private String address;
-	
-	@JsonIgnore 
+
+	@JsonIgnore
 	@ManyToOne
 //	(optional=false)
-	@JoinColumn(name="districts_id")
-    private Districts districts;
-	
-	@JsonIgnore
-	@OneToMany(targetEntity=Lease.class, mappedBy="resident",
-    		cascade=CascadeType.ALL, fetch = FetchType.LAZY)
-    private List<Lease> lease;
+	@JoinColumn(name = "districts_id")
+	private Districts districts;
 
-	
+	@JsonIgnore
+	@OneToMany(targetEntity = Lease.class, mappedBy = "resident", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+	private List<Lease> lease;
+
 	public Resident() {
 		super();
 	}
-	
+
 	public Resident(String id_card, String first_name, String last_name, String email, String phone, String address,
 			Districts districts) {
 		super();
@@ -70,8 +67,6 @@ public class Resident {
 		this.address = address;
 		this.districts = districts;
 	}
-
-
 
 	public Resident(String id_card, String first_name, String last_name, String email, String phone, String address,
 			Districts districts, List<Lease> lease) {

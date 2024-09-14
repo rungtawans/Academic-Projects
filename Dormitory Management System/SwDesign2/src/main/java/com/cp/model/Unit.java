@@ -23,12 +23,11 @@ public class Unit {
 	private Integer unit_price;
 	@Column(name = "unit_desc")
 	private String unit_desc;
-	
+
 	@JsonIgnore
 	@OneToMany(targetEntity = Bill.class, mappedBy = "unit", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 	private List<Bill> bills;
 
-	
 	public Unit() {
 		super();
 	}
@@ -73,5 +72,4 @@ public class Unit {
 		this.bills = bills;
 	}
 
-	
 }

@@ -5,6 +5,8 @@ const app = express();
 const port = 3000;
 const fs = require('fs');
 
+app.use(express.static('public'));
+
 // Parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.json())
@@ -15,6 +17,24 @@ const text = require('body-parser/lib/types/text');
 const { parse } = require('path');
 // const { isNumberObject } = require('util/types');
 
+app.get('/home', (req, res, next) => {
+
+    let options = {
+    root: __dirname,
+        headers: {
+            'Content-Type': 'text/html; charset=UTF-8'
+        }
+    };
+
+    res.sendFile('/public/home.html', options, function (err) {
+        if (err) {
+             next(err);
+        } else {
+            console.log('Sent: home.html');
+        }    
+    });
+});
+
 app.get('/aboutPage', (req, res, next) => {
 
     let options = {
@@ -24,7 +44,7 @@ app.get('/aboutPage', (req, res, next) => {
         }
     };
 
-    res.sendFile('/aboutPage.html', options, function (err) {
+    res.sendFile('/public/aboutPage.html', options, function (err) {
         if (err) {
              next(err);
         } else {
@@ -65,8 +85,6 @@ app.post('/api/users/create', (req, res) => {
         // '<link rel="stylesheet" href="cssHome.css"></link>',
         // '<a href="/aboutPage">Back</a>'
         
-       
-
         let content = name + " " + email + "\n" +
                      handleDate(date) + " " + "Score : " + score + "\n\n";
         // let content = name + " " + email + "\n";
